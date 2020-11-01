@@ -1,15 +1,13 @@
-.container {
-    width: 90%;
-    margin: 20px auto;
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-}
-
-h1 {
+h1 a{
+    color: #e4d1b0;
     text-transform: uppercase;
-    color: #e5d1b2;
-    letter-spacing: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.7rem;
+}
+h1 a:hover {
+    color: #e4d1b0;
+    text-decoration: none;
+}
+.navbar-light .navbar-toggler {
+    border: none;
 }
