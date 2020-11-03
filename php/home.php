@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header" role="banner">
         <div class="menu-wrap">
             <input type="checkbox" class="toggler">
             <div class="hamburger">
@@ -33,12 +33,12 @@
 
         </div>
         <img class="logo-cynes" src="../img/Logo + Baseline.png" alt="Logo Cynes" height="90">
-        <div class="main-image">
-            <img src="../img/image-accueil-CYNES.jpg" class="img-fluid" alt="Responsive image">
-        </div>
-    </header>
-    
 
+    </header>
+    <div class="main-image">
+        <img src="../img/image-accueil-CYNES.jpg" class="img-fluid" alt="Responsive image">
+    </div>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

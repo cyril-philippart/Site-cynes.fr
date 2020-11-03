@@ -3,8 +3,30 @@
     --menu-speed: 1s;
 }
 
+
 header {
+    position: sticky;
     text-align: center;
+    top: 0;
+    background: white;
+}
+
+.nav-is-stuck header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+	animation: stickAnim 1.3s;
+}
+ 
+@keyframes stickAnim {
+	0% {
+		transform: translateY(-86px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .menu-wrap {
@@ -92,9 +114,9 @@ header {
 }
 
 .menu-wrap .menu{
-    position: fixed;
+    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     visibility: hidden;
     overflow: hidden;
     display: flex;
@@ -136,7 +158,7 @@ header {
 }
 
 .logo-cynes {
-    margin: 0.5rem ;
+    margin: 0.6rem ;
 }
 
 .main-image{
