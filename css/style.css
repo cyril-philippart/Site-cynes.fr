@@ -157,6 +157,30 @@ header {
 
 .logo-cynes {
     margin: 0.6rem ;
+    height: 90px;
+}
+
+@media (max-width: 450px) {
+    .logo-cynes {
+        height: 50px;
+        margin: 0.2rem;
+    }
+    .menu-wrap .hamburger {
+        margin-top: -0.1rem;
+        width: 52px;
+    }
+    .menu-wrap .hamburger >div::before, 
+    .menu-wrap .hamburger >div::after {
+        top: -5px;
+    }
+    .menu-wrap .hamburger >div::after {
+        top: 5px;
+    }
+    .menu-wrap .toggler {
+        margin: 1.1rem 2rem;
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .main-image{
