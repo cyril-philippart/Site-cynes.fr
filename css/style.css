@@ -3,9 +3,7 @@
     --menu-speed: 1s;
 }
 
-
 header {
-    position: sticky;
     text-align: center;
     top: 0;
     background: white;
@@ -22,7 +20,7 @@ header {
  
 @keyframes stickAnim {
 	0% {
-		transform: translateY(-86px);
+		transform: translateY(-112px);
 	}
 	100% {
 		transform: translateY(0);
