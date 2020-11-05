@@ -15,7 +15,7 @@ header {
 	left: 0;
 	right: 0;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-	animation: stickAnim 1s;
+	animation: stickAnim 0.8s;
 }
  
 @keyframes stickAnim {
@@ -26,7 +26,6 @@ header {
 		transform: translateY(0);
 	}
 }
-
 .menu-wrap {
     top: 0;
     left: 0;
@@ -142,17 +141,20 @@ header {
     transition: opacity 0.6s ease;
 }
 
-.menu-wrap .menu > div > div >ul > li {
+.menu-wrap .menu > div > div >ul > li{
     list-style: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 2rem;
     padding: 0.5rem;
 }
 
 .menu-wrap .menu > div > div >ul > li >a {
     color: inherit;
     text-decoration: none;
-    transition: color 0.6s ease;
+    transition: color 0.2s ease;
+}
+.menu-wrap .menu > div > div >ul > li >a:hover {
+    color : black
 }
 
 .logo-cynes {
@@ -186,10 +188,17 @@ header {
         width: 20px;
         height: 20px;
     }
+    .menu-wrap .menu > div > div >ul > li {
+        list-style: none;
+        color: white;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
 }
 
 .main-image{
     width: 90%;
+    padding-bottom: 1rem;
 }
 
 .img-fluid {
