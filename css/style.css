@@ -35,7 +35,7 @@ header {
 
 .menu-wrap .toggler {
     position: absolute;
-    margin: 2rem 1.6rem;
+    margin: 2.5rem 1.9rem;
     top: 0;
     left: 0;
     z-index: 2;
@@ -47,10 +47,10 @@ header {
 
 .menu-wrap .hamburger {
     position: absolute;
-    margin: 1.3rem 1rem;
+    margin: 1.9rem 1rem;
     top: 0;
     left: 0;
-    width: 60px;
+    width: 70px;
     height: 60px;
     z-index: 1;
     padding: 1rem;
@@ -62,7 +62,7 @@ header {
 .menu-wrap .hamburger >div {
     position: relative;
     width: 80%;
-    height: 2px;
+    height: 12%;
     background-color: black;
     display: flex;
     align-items: center;
@@ -74,13 +74,13 @@ header {
 .menu-wrap .hamburger >div::after {
     content :'';
     position: absolute;
-    top: -8px;
+    top: -11px;
     width: 100%;
-    height: 2px;
+    height: 3px;
     background: inherit;
 }
 .menu-wrap .hamburger >div::after {
-    top: 8px;
+    top: 11px;
 }
 
 .menu-wrap .toggler:checked + .hamburger>div {
@@ -157,10 +157,10 @@ header {
 
 .logo-cynes {
     margin: 0.6rem ;
-    height: 90px;
+    height: 110px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 576px) {
     .logo-cynes {
         height: 50px;
         margin: 0.2rem;
@@ -169,12 +169,17 @@ header {
         margin-top: -0.1rem;
         width: 52px;
     }
+    .menu-wrap .hamburger >div{
+        height: 7%;
+    }
     .menu-wrap .hamburger >div::before, 
     .menu-wrap .hamburger >div::after {
-        top: -5px;
+        top: -6px;
+        height: 2px;
     }
     .menu-wrap .hamburger >div::after {
-        top: 5px;
+        top: 6px;
+        height: 2px;
     }
     .menu-wrap .toggler {
         margin: 1.1rem 2rem;
