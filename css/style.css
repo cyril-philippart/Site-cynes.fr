@@ -15,12 +15,12 @@ header {
 	left: 0;
 	right: 0;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-	animation: stickAnim 1.3s;
+	animation: stickAnim 1s;
 }
  
 @keyframes stickAnim {
 	0% {
-		transform: translateY(-112px);
+		transform: translateY(-132px);
 	}
 	100% {
 		transform: translateY(0);

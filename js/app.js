@@ -37,8 +37,7 @@
 				bodyRect	= el_body.getBoundingClientRect(),
 				scrollValue	= triggerElement ? triggerElement.getBoundingClientRect().top - bodyRect.top - navHeight  : 300;
  
-			// si le scroll est d'au moins 300 et
-			// la class nav-is-stuck n'existe pas sur HTML
+			// la class nav-is-stuck n'existe pas encore sur HTML
 			if ( wScrollTop > scrollValue && !classFound && wScrollTop < lastScroll) {
 				el_html.className = el_html.className + ' nav-is-stuck';
 				el_body.style.paddingTop = navHeight + 'px';
@@ -54,17 +53,17 @@
 
 		},
 		onScrolling = function() {
-        // on récupère la valeur du scroll maintenant
+        // je récupère la valeur du scroll maintenant
         var wScrollTop = w.pageYOffset || el_body.scrollTop;  
-        // on ajoute deux arguments, valeurs de scrolls
+        // j'ajoute deux arguments, valeurs de scrolls
         menuIsStuck( d.getElementById('main-image'), wScrollTop, lastScroll );     
-        // on enregistre notre dernière valeur de scroll
+        // j'enregistre la dernière valeur de scroll
         lastScroll = wScrollTop;       
         };
  
-	// quand on scroll
+	// quand je scroll
 	w.addEventListener('scroll', function(){
-		// on exécute la fonction onScrolling()
+		// j'exécute la fonction onScrolling()
 		w.requestAnimationFrame( onScrolling );
 	});
  
