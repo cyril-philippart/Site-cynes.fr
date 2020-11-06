@@ -63,7 +63,8 @@
  
 	// quand je scroll
 	w.addEventListener('scroll', function(){
-		// j'exécute la fonction onScrolling()
+		// j'exécute la fonction onScrolling() uniquement si .toggler n'est pas actif
+		if(document.querySelector('.toggler').checked == false)
 		w.requestAnimationFrame( onScrolling );
 	});
  
