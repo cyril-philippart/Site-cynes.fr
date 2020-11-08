@@ -1,5 +1,5 @@
 :root {
-    --overlay-color: rgba(0, 0, 0, 0.75);
+    --overlay-color: rgba(0, 0, 0, 0.85);
     --menu-speed: 1s;
 }
 
@@ -154,7 +154,7 @@ header {
     transition: color 0.2s ease;
 }
 .menu-wrap .menu > div > div >ul > li >a:hover {
-    color : black
+    color : grey
 }
 
 .logo-cynes {
@@ -197,12 +197,12 @@ header {
 }
 
 .main-image{
-    width: 90%;
     padding-bottom: 1rem;
 }
 
 .img-fluid {
     margin-left: 5%;
+    width: 90%;
 }
 
 .card {
