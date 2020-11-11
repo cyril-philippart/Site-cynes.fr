@@ -35,11 +35,11 @@
 				classFound	= el_html.className.match( regexp ),
 				navHeight	= header.offsetHeight,
 				bodyRect	= el_body.getBoundingClientRect(),
-				scrollValue	= triggerElement ? triggerElement.getBoundingClientRect().top - bodyRect.top - navHeight  : 300;
+				scrollValue	= triggerElement ? triggerElement.getBoundingClientRect().top - bodyRect.top - navHeight  : 1;
  
 			// la class nav-is-stuck n'existe pas encore sur HTML
 			if ( wScrollTop > scrollValue && !classFound && wScrollTop < lastScroll) {
-				el_html.className = el_html.className + ' nav-is-stuck';
+				el_html.className = el_html.className + 'nav-is-stuck';
 				el_body.style.paddingTop = navHeight + 'px';
 			}
  
@@ -56,7 +56,7 @@
         // je récupère la valeur du scroll maintenant
         var wScrollTop = w.pageYOffset || el_body.scrollTop;  
         // j'ajoute deux arguments, valeurs de scrolls
-        menuIsStuck( d.getElementById('main-image'), wScrollTop, lastScroll );     
+        menuIsStuck( d.getElementById('header'), wScrollTop, lastScroll );     
         // j'enregistre la dernière valeur de scroll
         lastScroll = wScrollTop;       
         };
@@ -65,7 +65,7 @@
 	w.addEventListener('scroll', function(){
 		// j'exécute la fonction onScrolling() uniquement si .toggler n'est pas actif
 		if(document.querySelector('.toggler').checked == false)
-		w.requestAnimationFrame( onScrolling );
+		w.requestAnimationFrame( onScrolling );	
 	});
  
 }(window, document));

@@ -1,3 +1,7 @@
+body {
+font-family: 'Roboto';
+}
+
 :root {
     --overlay-color: rgba(0, 0, 0, 0.85);
     --menu-speed: 1s;
@@ -5,8 +9,9 @@
 
 header {
     text-align: center;
-    top: 0;
     background: white;
+    position: sticky;
+	top: 0;
 }
 
 .nav-is-stuck header {
@@ -141,16 +146,21 @@ header {
     transition: opacity 0.6s ease;
 }
 
+.menu-wrap .menu > div > div >ul {
+    padding-left: 0rem;
+}
+
 .menu-wrap .menu > div > div >ul > li{
     list-style: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 0.5rem;
 }
 
 .menu-wrap .menu > div > div >ul > li >a {
     color: inherit;
     text-decoration: none;
+    text-transform: uppercase;
     transition: color 0.2s ease;
 }
 .menu-wrap .menu > div > div >ul > li >a:hover {
@@ -206,6 +216,57 @@ header {
 }
 
 .card {
-    z-index: -1;
+    position: initial;
 }
 
+.col-md-6 {
+    position: initial;
+    
+}
+
+.card-deck {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    
+}
+
+.logo {
+    height: 180px;
+}
+
+.icone-contact {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+.icone-contact a {
+    text-decoration: none;
+    transition: color 0.2s ease;
+    color: white;
+}
+
+.icone-contact a:hover {
+    color : grey
+}
+
+#phone {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.information {
+    color: white;
+}
+.information a{
+    text-decoration: none;
+    transition: color 0.2s ease;
+    color: white;
+}
+
+.information a:hover{
+    color: grey;
+}
