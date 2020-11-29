@@ -10,8 +10,7 @@ font-family: 'Roboto';
 header {
     text-align: center;
     background: white;
-    position: sticky;
-	top: 0;
+    top: 0;
 }
 
 .nav-is-stuck header {
@@ -161,7 +160,7 @@ header {
     color: inherit;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color 0.2s ease;
+    transition: color 0.6s ease;
 }
 .menu-wrap .menu > div > div >ul > li >a:hover {
     color : grey
@@ -215,24 +214,28 @@ header {
     width: 90%;
 }
 
-.card {
-    position: initial;
-}
-
-.col-md-6 {
+.card, .md-6, .mb-4 {
     position: initial;
     
 }
 
-.card-deck {
-    margin-left: 10px;
-    margin-right: 10px;
+
+
+.img-savoir-faire {
+    object-fit: cover;
+    height: 300px;
 }
+
+.row {
+    max-width: 1300px;
+    margin: auto;
+    flex-wrap: nowrap;
+}
+
 
 footer {
     text-align: center;
-    background-color: black;
-    
+    background-color: black; 
 }
 
 .logo {
@@ -270,3 +273,55 @@ footer {
 .information a:hover{
     color: grey;
 }
+
+
+.overlay-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+   /* Image originale */
+   
+.overlay-image .image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+   /* Texte original */
+.overlay-image .text {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/* Overlay */
+.overlay-image .hover {
+    position: absolute;
+    top: 0;
+    height: 300px;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+   }
+   /* Apparition overlay sur passage souris */
+   .overlay-image:hover .hover {
+    opacity: 1;
+   }
+
+   .overlay-image .normal {
+    transition: .5s ease;
+   }
+   .overlay-image:hover .normal {
+    opacity: 0;
+   }
+   .overlay-image .hover {
+    background-color: rgba(0,0,0,1);
+   }
