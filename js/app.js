@@ -48,19 +48,23 @@
 }(window, document));
 
 
-function changeZIndexImg(checkboxElem) 
+function changeZIndexImg(overlayImage) 
 {
-	if (checkboxElem.checked) 
+	if (overlayImage.checked) 
 	{
-		overlayImage = document.querySelector('.overlay-image');
-		overlayImage.style.zIndex = '-1';
-		overlayImage.style.transitionDuration = '0s'
+		document.querySelectorAll('.overlay-image').forEach(overlayImage => 
+		{
+			overlayImage.style.zIndex = '-1';
+			overlayImage.style.transitionDuration = '0s';
+		});
 	}
-	else 
+	else
 	{
-		overlayImage = document.querySelector('.overlay-image');
-		overlayImage.style.zIndex = '0';
-		overlayImage.style.transitionDuration = '1s'	
+		document.querySelectorAll('.overlay-image').forEach(overlayImage => 
+		{
+			overlayImage.style.zIndex = '0';
+			overlayImage.style.transitionDuration = '1s';
+		});
 	}
 }
 
