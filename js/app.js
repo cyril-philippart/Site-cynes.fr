@@ -48,28 +48,6 @@
 }(window, document));
 
 
-function changeZIndexImg(overlayImage) 
-{
-	if (overlayImage.checked) 
-	{
-		document.querySelectorAll('.overlay-image').forEach(overlayImage => 
-		{
-			overlayImage.style.zIndex = '-1';
-			overlayImage.style.transitionDuration = '0s';
-		});
-	}
-	else
-	{
-		document.querySelectorAll('.overlay-image').forEach(overlayImage => 
-		{
-			overlayImage.style.zIndex = '0';
-			overlayImage.style.transitionDuration = '1s';
-		});
-	}
-}
-
-
-
 
 
 
