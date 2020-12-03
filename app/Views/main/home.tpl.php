@@ -1,43 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/663b1e4bdb.js" crossorigin="anonymous"></script>
-    <title>CYNES</title>
-</head>
-
-<body>
-    <header id="header" role="banner">
-        <div class="menu-wrap">
-            <input type="checkbox" onchange="changeZIndexImg(this)" class="toggler">
-            <div class="hamburger">
-                <div></div>
-            </div>
-            <div class="menu">
-                <div>
-                    <div>
-                        <ul>
-                            <li><a href="#">Savoir-faire</a></li>
-                            <li><a href="#">Philosophie</a></li>
-                            <li><a href="#">Réalisations</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="#"><img class="logo-cynes" src="./img/Logo + Baseline.png" alt="Logo Cynes"></a>
-    </header>
-    <div class="main-image">
-        <img src="./img/image-principale.jpg" class="img-fluid" alt="Responsive image">
-    </div>
     <div class="card mb-3">
         <div id="intro" class="row no-gutters">
             <div class="col md-6">
@@ -68,7 +28,7 @@
                         <div class=" text _2 "></div>
                     </div>
                     <div class=" hover _b2 ">
-                        <img class=" image _b1 " src="./img/Identité-visuelleBD.jpg" alt="Alt text" />
+                        <img class=" image _b1 " src="assets/img/Identité-visuelleBD.jpg" alt="Alt text" />
                     </div>
                 </a>
             </div>
@@ -76,7 +36,7 @@
         <div class="col mb-4">
             <div class=" overlay-image _b0 ">
                 <a href="URL_LIEN">
-                    <img class=" image _b1 " src="./img/réseaux-sociaux.png" alt="Alt text" />
+                    <img class=" image _b1 " src="assets/img/réseaux-sociaux.png" alt="Alt text" />
                     <div class=" normal _b3 ">
                         <div class=" text _2 "></div>
                     </div>
@@ -96,7 +56,7 @@
                         <div class=" text _2 "></div>
                     </div>
                     <div class=" hover _b2 ">
-                        <img class=" image _b1 " src="./img/CYNES--impression-BD.jpg" alt="Alt text" />
+                        <img class=" image _b1 " src="assets/img/CYNES--impression-BD.jpg" alt="Alt text" />
                     </div>
                 </a>
             </div>
@@ -104,7 +64,7 @@
         <div class="col mb-4">
             <div class=" overlay-image _b0 ">
                 <a href="URL_LIEN">
-                    <img class=" image _b1 " src="./img/web-BD.jpg" alt="Alt text" />
+                    <img class=" image _b1 " src="assets/img/web-BD.jpg" alt="Alt text" />
                     <div class=" normal _b3 ">
                         <div class=" text _2 "></div>
                     </div>
@@ -115,21 +75,3 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <div class="logo-cynes-footer">
-            <img class="logo" src="./img/CYNES-blanc.png" alt="Logo Cynes">
-        </div>
-        <div class="icone-contact">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i id="phone" class="fas fa-phone-alt"></i></a>
-            <a href="#"><i class="far fa-envelope"></i></a>
-        </div>
-        <div class="information">
-            <p>© 2020 cynes. | Tous droits réservés | <a href="#">Mention légales</a> </p>
-        </div>
-    </footer>
-    <script src="./js/app.js"></script>
-</body>
-
-</html>
