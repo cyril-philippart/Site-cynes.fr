@@ -13,14 +13,7 @@ else
     $_SERVER['BASE_URI'] = '/';
 }
 
-$router->map(
-    'GET', '/',
-    [
-        'method' => 'home',
-        'controller' => '\App\Controllers\MainController'
-    ],
-    'main-home'
-);
+require_once '../app/Routes/routes.php';
 
 $match = $router->match();
 $dispatcher = new Dispatcher($match, '\App\Controllers\ErrorController::err404');

@@ -35,6 +35,3 @@
         </div>
         <a href="#"><img class="logo-cynes" src="assets/img/Logo + Baseline.png" alt="Logo Cynes"></a>
     </header>
-    <div class="main-image">
-        <img src="assets/img/image-principale.jpg" class="img-fluid" alt="Responsive image">
-    </div>

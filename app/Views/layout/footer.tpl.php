@@ -12,6 +12,7 @@
         </div>
     </footer>
  <script src="assets/js/app.js"></script>
+ <script src="assets/js/scroll.js"></script>
  </body>
 
  </html>
