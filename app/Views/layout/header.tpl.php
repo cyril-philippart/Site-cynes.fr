@@ -24,14 +24,14 @@
                 <div>
                     <div>
                         <ul>
-                            <li><a href="#">Savoir-faire</a></li>
-                            <li><a href="#">Philosophie</a></li>
-                            <li><a href="#">Réalisations</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="<?= $router->generate('expertise'); ?>">Savoir-faire</a></li>
+                            <li><a href="<?= $router->generate('realisation'); ?>">Réalisations</a></li>
+                            <li><a href="<?= $router->generate('team'); ?>">L' equipe</a></li>
+                            <li><a href="<?= $router->generate('contact'); ?>">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#"><img class="logo-cynes" src="assets/img/Logo + Baseline.png" alt="Logo Cynes"></a>
+        <a href="<?= $router->generate('main-home'); ?>"><img class="logo-cynes" src="assets/img/Logo + Baseline.png" alt="Logo Cynes"></a>
     </header>

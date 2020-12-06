@@ -78,7 +78,8 @@
             </div>
         </div>
     </div>
-    <div class="card mb-3">
+    <div class="trait-2"></div>
+    <div id="expertise" class="card mb-3">
         <div class="row no-gutters">
             <div class="col-md-4">
                 <img src="assets/img/web-BD.jpg" class="card-img" alt="...">
@@ -88,6 +89,7 @@
                     <h5 class="card-title">Une expertise sur mesure</h5>
                     <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi sint necessitatibus repellendus nulla, id pariatur nihil. Repellat, veritatis necessitatibus impedit in qui aspernatur, consequuntur distinctio nobis dolorum optio, expedita iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ratione laboriosam, molestiae laudantium saepe maxime incidunt magni in animi error nesciunt tempora, impedit rerum magnam labore maiores quidem esse tempore?
                     </p>
+                    <button type="button" class="btn btn-dark">Contactez-nous</button>
                 </div>
             </div>
         </div>
