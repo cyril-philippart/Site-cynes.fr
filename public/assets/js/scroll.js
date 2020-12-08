@@ -1,4 +1,4 @@
-(function scroll(w, d, undefined) 
+(function scroll(w, d) 
 {
 	var el_html = d.documentElement,
 

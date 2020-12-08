@@ -36,8 +36,6 @@ $router->map(
     'team'
 );
 
-
-
 $router->map(
     'GET', '/contact',
     [
@@ -46,3 +44,13 @@ $router->map(
     ],
     'contact'
 );
+
+$router->map(
+    'POST', '/contact',
+    [
+        'method' => 'contactCreate',
+        'controller' => '\App\Controllers\ContactController'
+    ],
+    'contact-create'
+);
+

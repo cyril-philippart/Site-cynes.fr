@@ -4,31 +4,9 @@ namespace App\Models;
 
 class Savoir_faire 
 {
-    private $id;
     private $name;
     private $description;
     private $picture;
-
-
-    /**
-     * Get the value of id
-     */ 
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set the value of id
-     *
-     * @return  self
-     */ 
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
 
     /**
      * Get the value of name

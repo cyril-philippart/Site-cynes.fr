@@ -11,8 +11,8 @@
             <p>© 2020 cynes. | Tous droits réservés | <a href="#">Mention légales</a> </p>
         </div>
     </footer>
- <script src="assets/js/app.js"></script>
  <script src="assets/js/scroll.js"></script>
+ <script src="assets/js/contact.js"></script>
  </body>
 
  </html>

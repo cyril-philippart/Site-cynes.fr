@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="nav-is-stuck">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
 <body>
     <header id="header" role="banner">
         <div class="menu-wrap">
-            <input type="checkbox" class="toggler">
+            <input type="checkbox" onchange="changeZIndexForm(this) "class="toggler">
             <div class="hamburger">
                 <div></div>
             </div>

@@ -2,35 +2,31 @@
 
 namespace App\Models;
 
-class Contact 
+use App\Utils\Database;
+use PDO;
+
+class Contact extends CoreModel
 {
-    private $id;
-    private $prenom;
     private $nom;
+    private $prenom;
+    private $societe;
     private $email;
     private $objet;
     private $message;
 
-    /**
-     * Get the value of id
-     */ 
-    public function getId()
+
+    public function insert()
     {
-        return $this->id;
+        $pdo = Database::getPDO();
+        $sql = "
+            INSERT INTO `contact` (nom, prenom, societe, email, objet, message)
+            VALUES ('{$this->nom}', '{$this->prenom}', '{$this->societe}', '{$this->email}', '{$this->objet}', '{$this->message}')
+        ";
+
+        $insertedRows = $pdo->exec($sql);
+        return $insertedRows;
     }
-
-    /**
-     * Set the value of id
-     *
-     * @return  self
-     */ 
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
-
+    
     /**
      * Get the value of prenom
      */ 
@@ -127,6 +123,26 @@ class Contact
     public function setMessage($message)
     {
         $this->message = $message;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of societe
+     */ 
+    public function getSociete()
+    {
+        return $this->societe;
+    }
+
+    /**
+     * Set the value of societe
+     *
+     * @return  self
+     */ 
+    public function setSociete($societe)
+    {
+        $this->societe = $societe;
 
         return $this;
     }

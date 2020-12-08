@@ -1,56 +1,63 @@
-<form>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="validationServer01">First name</label>
-      <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-6 mb-3">
-      <label for="validationServer02">Last name</label>
-      <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
+<form method="POST" class="row g-3 needs-validation" novalidate>
+  <div class="col-xl-6">
+    <div class="main-image">
+      <img src="assets/img/img-contact.jpg" id="img-contact" class="img-fluid" alt="Responsive image">
     </div>
   </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="validationServer03">City</label>
-      <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-      <div id="validationServer03Feedback" class="invalid-feedback">
-        Please provide a valid city.
+  <div class="col-xl-6">
+    <div class="col-xl-10">
+    <h3>Les champs avec * sont pré-requis</h4>
+      <label for="validationCustom01" class="form-label">Nom *</label>
+      <input type="text" class="form-control" id="validationCustom01" name="nom" required>
+      <div class="invalid-feedback">
+        Veuillez entrer votre nom
       </div>
     </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationServer04">State</label>
-      <select class="custom-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-        <option selected disabled value="">Choose...</option>
-        <option>...</option>
-      </select>
-      <div id="validationServer04Feedback" class="invalid-feedback">
-        Please select a valid state.
+    <div class="col-xl-10">
+      <label for="validationCustom02" class="form-label">Prénom *</label>
+      <input type="text" class="form-control" id="validationCustom02" name="prenom" required>
+      <div class="invalid-feedback">
+        Veuillez entrer votre prénom
       </div>
     </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationServer05">Zip</label>
-      <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-      <div id="validationServer05Feedback" class="invalid-feedback">
-        Please provide a valid zip.
+    <div class="col-xl-10">
+      <label for="validationCustom02" class="form-label">Société</label>
+      <input type="text" class="form-control-societe" id="validationCustom02" name="societe">
+    </div>
+    <div class="col-xl-10">
+      <label for="exampleFormControlInput1" class="form-label">Email *</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="email" required>
+      <div class="invalid-feedback">
+        Veuillez entrer votre adresse mail
       </div>
+    </div>
+    <div class="col-xl-10">
+      <label for="exampleFormControlInput1" class="form-label">Objet *</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="objet" required>
+      <div class="invalid-feedback">
+        Veuillez entrer un objet
+      </div>
+    </div>
+    <div class="col-xl-10">
+      <label for="exampleFormControlTextarea1" class="form-label">Message *</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" name="message" required></textarea>
+      <div class="invalid-feedback">
+        Veuillez ecrire votre demande
+      </div>
+    </div>
+    <div class="col-xl-10">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          J'accepte les conditions d'utilisations
+        </label>
+        <div class="invalid-feedback">
+          Vous devez cocher la petite case 😀
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-10">
+      <button class="btn btn-dark" type="submit">Envoyer</button>
     </div>
   </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-      <label class="form-check-label" for="invalidCheck3">
-        Agree to terms and conditions
-      </label>
-      <div  id="invalidCheck3Feedback" class="invalid-feedback">
-        You must agree before submitting.
-      </div>
-    </div>
-  </div>
-  <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
