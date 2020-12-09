@@ -206,7 +206,7 @@ header {
 }
     
 .img-fluid {
-    margin-left: 5%;
+    margin: 1% 5%;
     width: 90%;
 }
     
@@ -356,10 +356,20 @@ footer {
     #background-black-order {
         order:+1;
     }
+    .row {
+        margin-top: 2rem;
+    }
+
+    #marg {
+        margin-bottom: 2rem;
+    }
 }
 @media (min-width: 1025px){
     #background-black-order {
         order:0;
+    }
+    .img-fluid {
+        height: 650px;
     }
 }
     

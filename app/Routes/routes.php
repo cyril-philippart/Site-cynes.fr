@@ -6,7 +6,7 @@ $router->map(
         'method' => 'home',
         'controller' => '\App\Controllers\MainController'
     ],
-    'main-home'
+    'home'
 );
 
 $router->map(

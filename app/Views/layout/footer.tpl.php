@@ -8,7 +8,7 @@
             <a href="#"><i class="far fa-envelope"></i></a>
         </div>
         <div class="information">
-            <p>© 2020 cynes. | Tous droits réservés | <a href="#">Mention légales</a> </p>
+            <p>© 2020 CYNES. | Tous droits réservés | <a href="#">Mention légales</a> </p>
         </div>
     </footer>
  <script src="assets/js/scroll.js"></script>
