@@ -251,6 +251,7 @@ header {
 footer {
     text-align: center;
     background-color: black; 
+    margin-top: 2rem;
 }
     
 .logo {
@@ -464,6 +465,12 @@ footer {
         height: 700px;
         margin: 0;
     }
-}   
+}  
+
+#validationSent {
+    font-weight: bold;
+    color: green;
+    text-align: center;
+}
 
 

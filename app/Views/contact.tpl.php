@@ -1,3 +1,8 @@
+<div id="validationSent" class="col-xl-10">
+      <?php if(!empty($messageValidation)):?>
+      <span><?= $messageValidation ?></span>
+      <?php endif; ?>
+    </div>
 <form method="POST" class="row g-3 needs-validation" novalidate>
   <div class="col-xl-6">
     <div class="main-image">
@@ -6,7 +11,6 @@
   </div>
   <div class="col-xl-6">
     <div class="col-xl-10">
-    <h3>Les champs avec * sont pré-requis</h4>
       <label for="validationCustom01" class="form-label">Nom *</label>
       <input type="text" class="form-control" id="validationCustom01" name="nom" required>
       <div class="invalid-feedback">
@@ -40,10 +44,13 @@
     </div>
     <div class="col-xl-10">
       <label for="exampleFormControlTextarea1" class="form-label">Message *</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" name="message" required></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name="message" required></textarea>
       <div class="invalid-feedback">
         Veuillez ecrire votre demande
       </div>
+    </div>
+    <div class="col-xl-10">
+      <span>* champs obligatoires</span>
     </div>
     <div class="col-xl-10">
       <div class="form-check">
