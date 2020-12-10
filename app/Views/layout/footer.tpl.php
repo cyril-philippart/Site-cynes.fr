@@ -1,6 +1,6 @@
     <footer>
         <div class="logo-cynes-footer">
-            <img class="logo" src="assets/img/CYNES-blanc.png" alt="Logo Cynes">
+            <img class="logo" src="assets/img/CYNES-logo-blanc.png" alt="Logo Cynes">
         </div>
         <div class="icone-contact">
             <a href="#"><i class="fab fa-instagram"></i></a>

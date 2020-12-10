@@ -215,6 +215,9 @@ header {
     margin: auto;
 }
     
+.mb-3 {
+    margin-bottom: 4rem!important;
+}
 .citation{
     font-size: 2rem;
     font-weight: bold;
@@ -244,7 +247,7 @@ header {
 }
     
 #marg {
-    margin-top: 4rem;
+    margin-top: 8rem;
     margin-bottom: 4rem;
 }
     
@@ -369,7 +372,8 @@ footer {
         order:0;
     }
     .img-fluid {
-        height: 650px;
+        height: 745px;
+        object-fit: cover;
     }
 }
     
@@ -425,6 +429,11 @@ footer {
 
     #marg {
         margin-bottom: 0rem;
+        margin-top: 4rem;
+    }
+
+    .mb-3 {
+        margin-bottom: 2rem!important;
     }
 }
 
@@ -439,7 +448,8 @@ footer {
 }
 
 #expertise {
-    max-width: 540px;
+    max-width: 800px;
+    margin-top: 6rem;
 }
 
 /*************/
