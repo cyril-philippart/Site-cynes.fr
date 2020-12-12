@@ -6,7 +6,6 @@ class CoreController
 {
     protected function show(string $viewName, $viewVars = []) 
     {
-        global $router;
         $viewVars['currentPage'] = $viewName; 
         $viewVars['assetsBaseUri'] = $_SERVER['BASE_URI'] . 'assets/';
         $viewVars['baseUri'] = $_SERVER['BASE_URI'];

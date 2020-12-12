@@ -1,6 +1,9 @@
-    <div class="main-image">
-        <img src="assets/img/img-principale.jpg" class="img-fluid" alt="Responsive image">
-    </div>
+<div class="card text-white">
+  <img src="assets/img/img-principale.jpg" class="card-img img-fluid" alt="...">
+  <div class="card-img-overlay">
+    <h1 class="card-title">La simplicité est la clé de l'élégance</h1>
+  </div>
+</div>
     <div class="card mb-3">
         <div id="intro" class="row no-gutters">
             <div class="col md-6">
@@ -81,11 +84,11 @@
     <div id="expertise" class="card mb-4">
         <div class="row no-gutters">
             <div class="col-md-6">
-                <img src="assets/img/img-expertuse-sur-mesure.png" class="card-img" alt="...">
+                <img src="assets/img/img-expertuse-sur-mesure.png" id="card-img" alt="...">
             </div>
             <div class="col-md-6">
                 <div class="card-body">
-                    <h5 class="card-title">Une expertise sur mesure</h5>
+                    <h5>Une expertise sur mesure</h5>
                     <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi sint necessitatibus repellendus nulla, id pariatur nihil. Repellat, veritatis necessitatibus impedit in qui aspernatur, consequuntur distinctio nobis dolorum optio, expedita iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ratione laboriosam, molestiae laudantium saepe maxime incidunt magni in animi error nesciunt tempora, impedit rerum magnam labore maiores quidem esse tempore?
                     </p>
                     <a href="<?= $router->generate('contact'); ?>"><button type="button" class="btn btn-dark">Contactez-nous</button></a>

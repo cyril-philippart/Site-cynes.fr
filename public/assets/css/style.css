@@ -4,8 +4,7 @@
 /*           */
 /*************/
 body {
-    font-family: 'Roboto';
-    padding-top: 129px;
+    font-family: 'Gotham';
 }
     
 :root {
@@ -25,7 +24,6 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     animation: stickAnim 0.8s;
     
 }
@@ -200,16 +198,22 @@ header {
 #intro {
     align-items: center;
 }
-    
-.main-image{
-    padding-bottom: 1rem;
-}
-    
-.img-fluid {
+
+.card-img{
+    height: 745px;
+    object-fit: cover;
     margin: 1% 5%;
     width: 90%;
 }
-    
+
+.card-img-overlay {
+    padding: 0;
+    top: 50%;
+}
+
+.card-title {
+    text-align: center;
+}
 .card {
     border: none;
     margin: auto;
@@ -229,15 +233,6 @@ header {
     border-bottom: 3px solid black;
     width: 25%;
     margin: auto ;
-}
-    
-.card, .md-6 {
-    position: initial;
-}
-    
-.img-savoir-faire {
-    object-fit: cover;
-    height: 300px;
 }
     
 .row {
@@ -366,14 +361,17 @@ footer {
     #marg {
         margin-bottom: 2rem;
     }
+    
 }
 @media (min-width: 1025px){
     #background-black-order {
         order:0;
-    }
-    .img-fluid {
-        height: 745px;
-        object-fit: cover;
+    } 
+}
+
+@media (max-width: 1025px) {
+    .card-img{
+        height: auto;
     }
 }
     
@@ -437,19 +435,16 @@ footer {
     }
 }
 
-.card-img {
-    height: 100%;
-}
-
-.trait-2 {
-    border-bottom: 3px solid black;
-    width: 25%;
-    margin: auto ;
-}
-
 #expertise {
     max-width: 800px;
     margin-top: 6rem;
+}
+
+#card-img {
+    height: 100%;
+    object-fit: cover;
+    margin: 1% 5%;
+    width: 90%;
 }
 
 /*************/
