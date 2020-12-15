@@ -11,7 +11,6 @@
     <script src="https://kit.fontawesome.com/663b1e4bdb.js" crossorigin="anonymous"></script>
     <title>CYNES</title>
 </head>
-
 <body>
     <header id="header" role="banner">
         <div class="menu-wrap">

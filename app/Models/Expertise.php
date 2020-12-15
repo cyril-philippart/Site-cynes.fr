@@ -2,13 +2,14 @@
 
 namespace App\Models;
 
+use App\Controllers\CoreController;
 use App\Utils\Database;
 use PDO;
 
-class Expertise extends CoreModel
+class Expertise extends CoreController 
 {
     private $name;
-    private $description;
+    private $subtitle;
     private $picture;
 
     public static function findAll()
@@ -19,10 +20,6 @@ class Expertise extends CoreModel
         $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class);
         
         return $results;
-    }
-
-    public function insert()
-    {
     }
 
     /**
@@ -46,21 +43,21 @@ class Expertise extends CoreModel
     }
 
     /**
-     * Get the value of description
+     * Get the value of subtitle
      */ 
-    public function getDescription()
+    public function getSubtitle()
     {
-        return $this->description;
+        return $this->subtitle;
     }
 
     /**
-     * Set the value of description
+     * Set the value of subtitle
      *
      * @return  self
      */ 
-    public function setDescription($description)
+    public function setSubtitle($subtitle)
     {
-        $this->description = $description;
+        $this->subtitle = $subtitle;
 
         return $this;
     }
