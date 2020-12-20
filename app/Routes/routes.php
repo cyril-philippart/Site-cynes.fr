@@ -12,19 +12,19 @@ $router->map(
 $router->map(
     'GET', '/savoir-faire',
     [
-        'method' => 'expertise',
-        'controller' => '\App\Controllers\ExpertiseController'
+        'method' => 'list',
+        'controller' => '\App\Controllers\CategoryController'
     ],
-    'expertise'
+    'category-category'
 );
 
 $router->map(
-    'GET', '/realisations',
+    'GET', '/nos-projets',
     [
-        'method' => 'realisation',
-        'controller' => '\App\Controllers\RealisationController'
+        'method' => 'list',
+        'controller' => '\App\Controllers\ProjetController'
     ],
-    'realisation'
+    'projet-projet'
 );
 
 $router->map(

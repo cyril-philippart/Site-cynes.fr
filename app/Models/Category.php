@@ -2,23 +2,27 @@
 
 namespace App\Models;
 
-use App\Controllers\CoreController;
 use App\Utils\Database;
 use PDO;
 
-class Picture extends CoreController 
+class Category extends CoreModel
 {
     private $name;
+    private $subtitle;
     private $picture;
 
     public static function findAll()
     {
         $pdo = Database::getPDO();
-        $sql = 'SELECT * FROM `all_image`';
+        $sql = 'SELECT * FROM `category`';
         $pdoStatement = $pdo->query($sql);
         $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class);
         
         return $results;
+    }
+
+    public function insert()
+    {
     }
 
     /**

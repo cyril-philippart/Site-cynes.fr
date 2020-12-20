@@ -2,24 +2,26 @@
 
 namespace App\Models;
 
-use App\Controllers\CoreController;
 use App\Utils\Database;
 use PDO;
 
-class Expertise extends CoreController 
+class Home extends CoreModel
 {
     private $name;
-    private $subtitle;
     private $picture;
 
     public static function findAll()
     {
         $pdo = Database::getPDO();
-        $sql = 'SELECT * FROM `savoir_faire`';
+        $sql = 'SELECT * FROM `home`';
         $pdoStatement = $pdo->query($sql);
         $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class);
         
         return $results;
+    }
+    
+    public function insert()
+    {
     }
 
     /**

@@ -22,8 +22,8 @@
                 <div>
                     <div>
                         <ul>
-                            <li><a href="<?= $router->generate('expertise'); ?>">Savoir-faire</a></li>
-                            <li><a href="<?= $router->generate('realisation'); ?>">Réalisations</a></li>
+                            <li><a href="<?= $router->generate('category-category'); ?>">Savoir-faire</a></li>
+                            <li><a href="<?= $router->generate('projet-projet'); ?>">Nos projets</a></li>
                             <li><a href="<?= $router->generate('team'); ?>">L' equipe</a></li>
                             <li><a href="<?= $router->generate('contact'); ?>">Contact</a></li>
                         </ul>

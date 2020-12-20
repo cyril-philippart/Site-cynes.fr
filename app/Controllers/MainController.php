@@ -2,15 +2,15 @@
 
 namespace App\Controllers;
 
-use App\Models\Picture;
+use App\Models\Home;
 
 class MainController extends CoreController
 {
     public function home()
     {
-        $allPicture = Picture::findAll();
+        $allElement = Home::findAll();
         $this->show('home', [
-            'allPicture' => $allPicture
+            'allElement' => $allElement
         ]);
     }
 }
