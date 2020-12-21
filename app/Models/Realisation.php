@@ -2,37 +2,40 @@
 
 namespace App\Models;
 
+use App\Models\CoreModel;
 use App\Utils\Database;
 use PDO;
 
-class Projet extends CoreModel 
+class Realisation extends CoreModel
 {
-    private $name;
+    private $name;	
     private $picture;
+    private $category_id;
+    private $projet_id;
 
     public static function findAll()
     {
         $pdo = Database::getPDO();
-        $sql = 'SELECT * FROM `projet` ORDER BY `id` DESC';
+        $sql = 'SELECT * FROM `realisation`';
         $pdoStatement = $pdo->query($sql);
         $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class);
         
         return $results;
     }
-
-    static public function find($id) 
+    
+    /* static public function find($id) 
     {
         $pdo = Database::getPDO();
         $sql = "
         SELECT *
-        FROM projet
+        FROM realisation
         WHERE id = $id
         ;
       ";
         $pdoStatement = $pdo->query($sql);
-        $results = $pdoStatement->fetchObject('App\Models\Projet');
+        $results = $pdoStatement->fetchObject('App\Models\Realisation');
         return $results;
-    }
+    } */
 
     public function insert()
     {
@@ -74,6 +77,46 @@ class Projet extends CoreModel
     public function setPicture($picture)
     {
         $this->picture = $picture;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of category_id
+     */ 
+    public function getCategory_id()
+    {
+        return $this->category_id;
+    }
+
+    /**
+     * Set the value of category_id
+     *
+     * @return  self
+     */ 
+    public function setCategory_id($category_id)
+    {
+        $this->category_id = $category_id;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of projet_id
+     */ 
+    public function getProjet_id()
+    {
+        return $this->projet_id;
+    }
+
+    /**
+     * Set the value of projet_id
+     *
+     * @return  self
+     */ 
+    public function setProjet_id($projet_id)
+    {
+        $this->projet_id = $projet_id;
 
         return $this;
     }

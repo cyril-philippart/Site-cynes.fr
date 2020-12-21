@@ -313,7 +313,9 @@ footer {
     
 .overlay-image .text {
     color: #fff;
-    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
     line-height: 1.5em;
     text-shadow: 2px 2px 2px #000;
     text-align: center;
@@ -570,5 +572,24 @@ h3 {
     
 }
 
+/**************/
+/*            */
+/* Projet     */
+/*            */
+/**************/
+
+#projet-overlay-image {
+    width: 90%;
+    margin:  1.5rem auto ;
+    height: 500px;
+}
+
+#projet-overlay-image .image {
+    height: 500px;
+}
+
+#projet-overlay-image .hover {
+    height: 500px;
+}
 
 

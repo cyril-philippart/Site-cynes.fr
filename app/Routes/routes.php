@@ -15,8 +15,34 @@ $router->map(
         'method' => 'list',
         'controller' => '\App\Controllers\CategoryController'
     ],
+    'category-list'
+);
+
+
+$router->map(
+    'GET', '/savoir-faire/[i:id]',
+    [
+        'method' => 'category',
+        'controller' => '\App\Controllers\CategoryController'
+    ],
     'category-category'
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $router->map(
     'GET', '/nos-projets',
@@ -24,16 +50,16 @@ $router->map(
         'method' => 'list',
         'controller' => '\App\Controllers\ProjetController'
     ],
-    'projet-projet'
+    'projet-list'
 );
 
 $router->map(
     'GET', '/equipe',
     [
-        'method' => 'team',
-        'controller' => '\App\Controllers\TeamController'
+        'method' => 'realisation',
+        'controller' => '\App\Controllers\RealisationController'
     ],
-    'team'
+    'realisation'
 );
 
 $router->map(

@@ -7,6 +7,7 @@ use PDO;
 
 class Category extends CoreModel
 {
+    private $id;
     private $name;
     private $subtitle;
     private $picture;
@@ -19,6 +20,28 @@ class Category extends CoreModel
         $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class);
         
         return $results;
+    }
+    
+    static public function find($id) 
+    {
+        $pdo = Database::getPDO();
+        $sql = "
+        SELECT *
+        FROM category
+        WHERE id = $id
+        ;
+      ";
+        $pdoStatement = $pdo->query($sql);
+        $results = $pdoStatement->fetchObject('App\Models\Category');
+        return $results;
+    }
+    
+    public function realisations()
+    {
+        $sql = "SELECT * FROM realisation WHERE category_id = $this->id";
+        $pdo = Database::getPDO();
+        $pdoStatement = $pdo->query($sql);
+        return $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'App\Models\Realisation');
     }
 
     public function insert()
@@ -81,6 +104,26 @@ class Category extends CoreModel
     public function setPicture($picture)
     {
         $this->picture = $picture;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->id = $id;
 
         return $this;
     }
