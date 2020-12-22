@@ -7,6 +7,7 @@ use PDO;
 
 class Projet extends CoreModel 
 {
+    private $id;
     private $name;
     private $picture;
 
@@ -33,6 +34,15 @@ class Projet extends CoreModel
         $results = $pdoStatement->fetchObject('App\Models\Projet');
         return $results;
     }
+
+    public function realisations()
+    {
+        $sql = "SELECT * FROM realisation WHERE projet_id = $this->id";
+        $pdo = Database::getPDO();
+        $pdoStatement = $pdo->query($sql);
+        return $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'App\Models\Realisation');
+    }
+
 
     public function insert()
     {
@@ -74,6 +84,26 @@ class Projet extends CoreModel
     public function setPicture($picture)
     {
         $this->picture = $picture;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->id = $id;
 
         return $this;
     }

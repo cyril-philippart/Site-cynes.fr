@@ -578,6 +578,20 @@ h3 {
 /*            */
 /**************/
 
+#projet-list-overlay-image {
+    width: 90%;
+    margin:  1.5rem auto ;
+    height: 500px;
+}
+
+#projet-list-overlay-image .image {
+    height: 500px;
+}
+
+#projet-list-overlay-image .hover {
+    height: 500px;
+}
+
 #projet-overlay-image {
     width: 90%;
     margin:  1.5rem auto ;
@@ -589,7 +603,15 @@ h3 {
 }
 
 #projet-overlay-image .hover {
-    height: 500px;
+    height: 50px;
+    bottom: 0;
+    top: 90%;
+    background-color: rgba(0,0,0,0.8);
+    transition: 0.7s ease;
+}
+
+#return-btn {
+   
 }
 
 

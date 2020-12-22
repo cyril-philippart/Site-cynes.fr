@@ -7,6 +7,7 @@ use PDO;
 
 class Contact extends CoreModel
 {
+    private $id;
     private $nom;
     private $prenom;
     private $societe;
@@ -143,6 +144,26 @@ class Contact extends CoreModel
     public function setSociete($societe)
     {
         $this->societe = $societe;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->id = $id;
 
         return $this;
     }

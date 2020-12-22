@@ -8,6 +8,7 @@ use PDO;
 
 class Realisation extends CoreModel
 {
+    private $id;
     private $name;	
     private $picture;
     private $category_id;
@@ -22,20 +23,6 @@ class Realisation extends CoreModel
         
         return $results;
     }
-    
-    /* static public function find($id) 
-    {
-        $pdo = Database::getPDO();
-        $sql = "
-        SELECT *
-        FROM realisation
-        WHERE id = $id
-        ;
-      ";
-        $pdoStatement = $pdo->query($sql);
-        $results = $pdoStatement->fetchObject('App\Models\Realisation');
-        return $results;
-    } */
 
     public function insert()
     {
@@ -117,6 +104,26 @@ class Realisation extends CoreModel
     public function setProjet_id($projet_id)
     {
         $this->projet_id = $projet_id;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->id = $id;
 
         return $this;
     }

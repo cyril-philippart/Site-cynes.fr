@@ -13,4 +13,14 @@ class ProjetController extends CoreController
             'allprojet' => $allprojet,
         ]);
     }
+
+    public function projet($params)
+    {
+        $projet = Projet::find($params['id']);
+        $realisation = $projet->realisations();
+        $this->show('projet/projet', [
+            'projet' => $projet,
+            'realisation' => $realisation
+        ]);
+    }
 }

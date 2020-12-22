@@ -7,6 +7,7 @@ use PDO;
 
 class Home extends CoreModel
 {
+    private $id;
     private $name;
     private $picture;
 
@@ -80,6 +81,26 @@ class Home extends CoreModel
     public function setPicture($picture)
     {
         $this->picture = $picture;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        $this->id = $id;
 
         return $this;
     }

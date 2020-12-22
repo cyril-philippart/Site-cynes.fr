@@ -1,8 +1,9 @@
+
 <div class="row row row-cols-1 row-cols-md-2 row-cols-xl-3">
     <?php foreach ($allprojet as $currentProjet) : ?>
         <div class="">
-            <div id="projet-overlay-image" class=" overlay-image _b0 ">
-                <a href="#">
+            <div id="projet-list-overlay-image" class=" overlay-image _b0 ">
+                <a href="<?= $router->generate('projet-projet') . $currentProjet->getId()?>">
                     <img class=" image _b1 " src="<?=$currentProjet->getPicture()?>" alt="Alt text" />
                     <div class=" normal _b3 ">
                         <div class=" text _2 "></div>
