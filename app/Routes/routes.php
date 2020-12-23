@@ -48,10 +48,10 @@ $router->map(
 $router->map(
     'GET', '/equipe',
     [
-        'method' => 'realisation',
-        'controller' => '\App\Controllers\RealisationController'
+        'method' => 'team',
+        'controller' => '\App\Controllers\TeamController'
     ],
-    'realisation'
+    'team'
 );
 
 $router->map(

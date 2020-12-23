@@ -38,7 +38,7 @@ class Category extends CoreModel
     
     public function realisations()
     {
-        $sql = "SELECT * FROM realisation WHERE category_id = $this->id";
+        $sql = "SELECT * FROM realisation WHERE category_id = $this->id ORDER BY `id` DESC";
         $pdo = Database::getPDO();
         $pdoStatement = $pdo->query($sql);
         return $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'App\Models\Realisation');

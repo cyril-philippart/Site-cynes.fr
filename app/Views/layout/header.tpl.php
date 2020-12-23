@@ -22,9 +22,10 @@
                 <div>
                     <div>
                         <ul>
+                            <li><a href="<?= $router->generate('home'); ?>">Accueil</a></li>
                             <li><a href="<?= $router->generate('category-list'); ?>">Savoir-faire</a></li>
                             <li><a href="<?= $router->generate('projet-list'); ?>">Nos projets</a></li>
-                            <li><a href="<?= $router->generate('realisation'); ?>">L' equipe</a></li>
+                            <li><a href="<?= $router->generate('team'); ?>">L' equipe</a></li>
                             <li><a href="<?= $router->generate('contact'); ?>">Contact</a></li>
                         </ul>
                     </div>

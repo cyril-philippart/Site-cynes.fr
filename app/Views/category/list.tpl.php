@@ -26,9 +26,6 @@
     </div>
   </div>
 </div>
-<div class="separation">
-  <span>unvivers social-média et web désign</span>
-</div>
 <div class="card-expertise">
   <div class="row no-gutters mt-0">
     <div class="col-md-6">

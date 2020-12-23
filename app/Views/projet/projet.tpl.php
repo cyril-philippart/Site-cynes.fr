@@ -1,5 +1,5 @@
-<h1>Vous êtes dans le projet <?= $projet->getName(); ?></h1>
-<a href="<?= $router->generate('projet-list'); ?>" id ="return-btn" class="btn btn-dark">Retour</a>
+<h1 class="title-projet" >Projet <?= $projet->getName(); ?></h1>
+<input class="btn btn-dark" type = "button" value = "Retour"  onclick = "history.go(-1)">
 <div class="row row row-cols-1 row-cols-md-2 row-cols-xl-3">
     <div class="">
         <div id="projet-overlay-image" class=" overlay-image _b0 ">
@@ -13,3 +13,4 @@
         </div>
     </div>
 </div>
+
