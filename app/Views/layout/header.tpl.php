@@ -14,7 +14,7 @@
 <body>
     <header id="header" role="banner">
         <div class="menu-wrap">
-            <input type="checkbox" onchange="changeZIndexForm(this) "class="toggler">
+            <input type="checkbox" onchange="changeColorToggle(this) "class="toggler">
             <div class="hamburger">
                 <div></div>
             </div>

@@ -42,7 +42,19 @@
 }(window, document));
 
 
-
+function changeColorToggle(checkboxElem) 
+{
+	if (checkboxElem.checked) 
+	{
+		changeColor = document.querySelector('.menu-wrap .hamburger >div')
+		changeColor.style.backgroundColor = 'white';
+	}
+	else 
+	{
+		changeColor = document.querySelector('.menu-wrap .hamburger >div')
+		changeColor.style.backgroundColor = 'black';
+	}
+}
 
 
 
