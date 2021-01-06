@@ -42,6 +42,7 @@ class Projet extends CoreModel
         $pdoStatement = $pdo->query($sql);
         return $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'App\Models\Realisation');
     }
+    
 
 
     public function insert()
