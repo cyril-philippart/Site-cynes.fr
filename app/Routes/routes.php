@@ -72,3 +72,12 @@ $router->map(
     'contact-create'
 );
 
+$router->map(
+    'GET', '/mentions-legales',
+    [
+        'method' => 'legal_mentions',
+        'controller' => '\App\Controllers\MainController'
+    ],
+    'legal_mentions'
+);
+

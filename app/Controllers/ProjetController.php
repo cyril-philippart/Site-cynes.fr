@@ -20,7 +20,8 @@ class ProjetController extends CoreController
         $realisation = $projet->realisations();
         $this->show('projet/projet', [
             'projet' => $projet,
-            'realisation' => $realisation
+            'realisation' => $realisation,
         ]);
+        
     }
 }

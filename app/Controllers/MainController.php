@@ -13,4 +13,10 @@ class MainController extends CoreController
             'allElement' => $allElement
         ]);
     }
+
+    public function legal_mentions()
+    {
+        
+        $this->show('legal_mentions');
+    }
 }
