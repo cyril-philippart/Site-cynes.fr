@@ -468,6 +468,63 @@ h3 {
     font-weight: 800;
 }
 
+.carousel {
+    margin-top: 8rem;
+    margin-bottom: 20rem;
+}
+
+.carousel-title {
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+}
+
+.carousel-trait {
+    border-bottom: 2px solid black;
+    width: 40%;
+    margin :1rem  auto 3rem;
+}
+
+.carousel-ul {
+    left: 10%;
+    right: 10%;
+    padding-inline-start: 0;
+}
+
+.carousel-list {
+    width: 50%;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: 1s opacity; 
+    position: absolute;
+}
+
+.active {
+    opacity: 1;
+}
+
+.logo-customer {
+    height: 230px;
+}
+
+@media (max-width: 576px) {
+    .carousel {
+        margin-top: 4rem;
+        margin-bottom: 17rem;
+    }
+    .logo-customer{
+        height: 160px;
+    }
+}
+
+.phone-number {
+    display: block ;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+    font-style: italic;
+}
 
 
 /*************/
@@ -567,31 +624,31 @@ h3 {
 #projet-list-overlay-image {
     width: 90%;
     margin:  1.5rem auto ;
-    height: 500px;
+    height: 550px;
 }
 
 #projet-list-overlay-image .image {
-    height: 500px;
+    height: 550px;
 }
 
 #projet-list-overlay-image .hover {
-    height: 500px;
+    height: 550px;
 }
 
 #projet-overlay-image {
     width: 90%;
     margin:  1.5rem auto ;
-    height: 650px;
+    height: 750px;
 }
 
 #projet-overlay-image .image {
-    height: 650px;
+    height: 750px;
 }
 
 #projet-overlay-image .hover {
     height: 50px;
     bottom: 0;
-    top: 92.5%;
+    top: 93.5%;
     background-color: rgba(0,0,0,0.8);
     transition: 0.7s ease;
 }
@@ -608,11 +665,11 @@ h3 {
 
 @media (max-width: 576px) {
     #projet-overlay-image {
-        height: 450px;
+        height: 500px;
     }
 
     #projet-overlay-image .image{
-        height: 450px;
+        height: 500px;
     }
 
     #projet-overlay-image .hover {

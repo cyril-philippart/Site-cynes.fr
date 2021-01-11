@@ -81,3 +81,12 @@ $router->map(
     'legal_mentions'
 );
 
+$router->map(
+    'GET', '/error404',
+    [
+        'method' => 'error',
+        'controller' => '\App\Controllers\ErrorController'
+    ],
+    'error'
+);
+

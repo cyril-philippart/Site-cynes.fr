@@ -3,14 +3,18 @@
 namespace App\Controllers;
 
 use App\Models\Home;
+use App\Models\Logo;
 
 class MainController extends CoreController
 {
     public function home()
     {
         $allElement = Home::findAll();
+        $allLogo = Logo::findAll();
+        
         $this->show('home', [
-            'allElement' => $allElement
+            'allElement' => $allElement,
+            'allLogo' => $allLogo
         ]);
     }
 

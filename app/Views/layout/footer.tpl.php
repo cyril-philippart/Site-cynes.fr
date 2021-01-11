@@ -11,8 +11,11 @@
             <p>© 2021 CYNES. | Tous droits réservés | <a href="<?= $router->generate('legal_mentions'); ?>">Mention légales</a> </p>
         </div>
     </footer>
- <script src="/assets/js/scroll.js"></script>
- <script src="/assets/js/contact.js"></script>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/assets/js/carousel.js"></script>
+    <script src="/assets/js/scroll.js"></script>
+    <script src="/assets/js/contact.js"></script>
  </body>
 
  </html>

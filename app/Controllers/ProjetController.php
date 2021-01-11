@@ -17,11 +17,17 @@ class ProjetController extends CoreController
     public function projet($params)
     {
         $projet = Projet::find($params['id']);
-        $realisation = $projet->realisations();
-        $this->show('projet/projet', [
-            'projet' => $projet,
-            'realisation' => $realisation,
-        ]);
-        
+        if ($params > 9)
+            {
+                $this->show('layout/error');
+            }  
+        else
+            {
+                $realisation = $projet->realisations();
+                $this->show('projet/projet', [
+                    'projet' => $projet,
+                    'realisation' => $realisation,
+                ]);
+            }
     }
 }

@@ -16,5 +16,5 @@ else
 require_once '../app/Routes/routes.php';
 
 $match = $router->match();
-$dispatcher = new Dispatcher($match, '\App\Controllers\ErrorController::err404');
+$dispatcher = new Dispatcher($match, '\App\Controllers\ErrorController::error');
 $dispatcher->dispatch();

@@ -19,13 +19,18 @@ class CategoryController extends CoreController
     {
         $category = Category::find($params['id']);
         $projet = Projet::findAll();
-        $realisation = $category->realisations();
-        $this->show('category/category', [
-            'category' => $category,
-            'realisation' => $realisation,
-            'projet' => $projet
-        ]);
+        if ($params > 4)
+        {
+            $this->show('layout/error');
+        }  
+        else
+        {
+            $realisation = $category->realisations();
+            $this->show('category/category', [
+                'category' => $category,
+                'realisation' => $realisation,
+                'projet' => $projet
+            ]);
+        }
     }
-
-    
 }

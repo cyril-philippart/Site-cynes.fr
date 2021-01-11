@@ -16,19 +16,19 @@
         </div>
     </div>
 </div>
+<?php if (!empty($realisation[1])) : ?>
 <div class="row row row-cols-1 row-cols-md-2 row-cols-xl-2">
-    <?php if (!empty($realisation[1])) : ?>
-        <div class="long-img-wrap">
-            <div id="projet-overlay-image" class=" overlay-image _b0 ">
-                <img class=" image _b1" src="<?= $realisation[1]->getPicture() ?>" alt="Alt text" />
-                <div class=" normal _b3 ">
-                    <div class=" text _2 "></div>
-                </div>
-                <div class=" hover _b2 ">
-                    <div class=" text _2 "><?= $realisation[1]->getName() ?></div>
-                </div>
+    <div class="long-img-wrap">
+        <div id="projet-overlay-image" class=" overlay-image _b0 ">
+            <img class=" image _b1" src="<?= $realisation[1]->getPicture() ?>" alt="Alt text" />
+            <div class=" normal _b3 ">
+                <div class=" text _2 "></div>
+            </div>
+            <div class=" hover _b2 ">
+                <div class=" text _2 "><?= $realisation[1]->getName() ?></div>
             </div>
         </div>
+    </div>
     <?php endif; ?>
     <?php if (!empty($realisation[2])) : ?>
         <div class="long-img-wrap">
@@ -72,18 +72,18 @@
                 </div>
             </div>
         </div>
-<?php endif; ?>
-<?php if (!empty($realisation[5])) : ?>
-    <div class="long-img-wrap">
-        <div id="projet-overlay-image" class=" overlay-image _b0 ">
-            <img class=" image _b1" src="<?= $realisation[5]->getPicture() ?>" alt="Alt text" />
-            <div class=" normal _b3 ">
-                <div class=" text _2 "></div>
-            </div>
-            <div class=" hover _b2 ">
-                <div class=" text _2 "><?= $realisation[5]->getName() ?></div>
+    <?php endif; ?>
+    <?php if (!empty($realisation[5])) : ?>
+        <div class="long-img-wrap">
+            <div id="projet-overlay-image" class=" overlay-image _b0 ">
+                <img class=" image _b1" src="<?= $realisation[5]->getPicture() ?>" alt="Alt text" />
+                <div class=" normal _b3 ">
+                    <div class=" text _2 "></div>
+                </div>
+                <div class=" hover _b2 ">
+                    <div class=" text _2 "><?= $realisation[5]->getName() ?></div>
+                </div>
             </div>
         </div>
-    </div>
-<?php endif; ?>
+    <?php endif; ?>
 </div>
