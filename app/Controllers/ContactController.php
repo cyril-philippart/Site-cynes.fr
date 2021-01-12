@@ -3,12 +3,16 @@
 namespace App\Controllers;
 
 use App\Models\Contact;
+use App\Models\Home;
 
 class ContactController extends CoreController
 {
     public function contact()
     {
-        $this->show('contact');
+        $allElement = Home::findAll();
+        $this->show('contact', [
+            'allElement' => $allElement
+        ]);
     }
 
     public function contactCreate()

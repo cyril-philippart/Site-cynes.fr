@@ -1,1 +1,1 @@
-<h1>Coucou, ici bientot l'équipe </h1>
+<h1>Comming soon</h1>

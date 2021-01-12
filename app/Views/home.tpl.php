@@ -100,9 +100,9 @@
 <div class="carousel">
     <h5 class="carousel-title">Ils nous font confiance</h5>
     <div class="carousel-trait"></div>
-    <?php foreach ($allLogo as $currentLogo) : ?>
-        <ul class="carousel-ul">
-            <li class="carousel-list"><img class="logo-customer" src="<?= $currentLogo->getPicture() ?>" alt="Logo Cynes"></li>
-        </ul>
-    <?php endforeach; ?>
+    <ul class="carousel-ul">
+        <?php foreach ($allLogo as $currentLogo) : ?>
+            <li class="carousel-list"><img class="logo-customer" src="<?= $currentLogo->getPicture() ?>"></li>
+        <?php endforeach; ?>
+    </ul>
 </div>
