@@ -9,15 +9,15 @@
         <div class="col md-6">
             <div class="card-body">
                 <p class="card-text">CYNES est une agence de communication créative, qui partage les convictions de Monsieur Albert
-                    Camus “Créer c’est vivre deux fois".<br>Nous vous accompagnons dans la création et le
-                    développement de votre image et de votre notoriété.<br>Pour nous, concevoir une identité
+                    Camus “Créer c’est vivre deux fois". Nous vous accompagnons dans la création et le
+                    développement de votre image et de votre notoriété. Pour nous, concevoir une identité
                     visuelle, c’est traduire une personnalité et un univers, puis le retranscrire graphiquement avec
                     justesse et savoir-faire.</p>
             </div>
         </div>
         <div class="col md-6">
             <div class="card-body">
-                <p class="citation">Le design<br> est l'ambassadeur silencieux de votre marque</p>
+                <span class="citation">Le design<br> est l'ambassadeur silencieux de votre marque</span>
             </div>
         </div>
     </div>
@@ -89,7 +89,7 @@
         <div class="col-md-6">
             <div class="card-body">
                 <h3><?= $allElement[5]->getName() ?></h3>
-                <p class="card-text">A la manière d'un couturier, Cynes imagine et conçoit des créations sur-mesures à vos attentes. Notre leitmotiv : « Il y a trois réponses possibles à une pièce de design – oui, non et wow ! " <br> Wow est la réaction que nous recherchons pour vous.
+                <p class="card-text">A la manière d'un couturier, Cynes imagine et conçoit des créations sur-mesures à vos attentes. Notre leitmotiv : « Il y a trois réponses possibles à une pièce de design – oui, non et wow ! "Wow est la réaction que nous recherchons pour vous.
                 </p>
                 <a href="<?= $router->generate('contact'); ?>"><button type="button" class="btn btn-dark">Contactez-nous</button></a>
                 <span class="phone-number">+33 6 69 56 74 44</span>

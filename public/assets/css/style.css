@@ -3,8 +3,13 @@
 /* Header    */
 /*           */
 /*************/
-body {
+@font-face {
     font-family: 'Gotham';
+    src: url("/assets/font/GothamMedium.ttf");
+    font-display: auto;
+  }
+
+body {
     padding-top: 129px;
 }
     
@@ -188,6 +193,10 @@ header {
 .logo-cynes {
     margin: 0.6rem ;
     height: 110px;
+}
+
+p {
+    text-align: justify;
 }
     
 /*************/
