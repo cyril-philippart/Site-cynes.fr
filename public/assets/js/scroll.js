@@ -7,7 +7,6 @@
 		lastScroll = w.pageYOffset || el_body.scrollTop,
 		menuIsStuck = function (triggerElement, wScrollTop, lastScroll) 
 		{
-				displayHeader = document.querySelector('.hamburger');
 				regexp = /(nav\-is\-stuck)/i,
 				classFound = el_html.className.match(regexp),
 				navHeight = header.offsetHeight,
@@ -16,7 +15,6 @@
 
 			if (wScrollTop > scrollValue && !classFound && wScrollTop < lastScroll) 
 			{
-				displayHeader.style.display = '';
 				el_html.className = el_html.className + 'nav-is-stuck';
 				el_body.style.paddingTop = navHeight + 'px';
 			}
@@ -24,7 +22,6 @@
 			if (classFound && wScrollTop > lastScroll) 
 			{
 				el_html.className = el_html.className.replace(regexp, '');
-				displayHeader.style.display = 'none';
 				el_body.style.paddingTop = '0';
 			}
 

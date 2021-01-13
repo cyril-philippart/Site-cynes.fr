@@ -21,8 +21,7 @@ body {
 header {
     text-align: center;
     background: white;
-    top: 0;
-    z-index: 1;
+    animation: stickAnimOut 2s;
 }
     
 .nav-is-stuck header {
@@ -31,7 +30,7 @@ header {
     left: 0;
     right: 0;
     animation: stickAnim 0.8s;
-    
+    z-index: 1;
 }
      
 @keyframes stickAnim {
@@ -43,14 +42,14 @@ header {
     }
 } 
 
-/* @keyframes stickAnimOut {
+@keyframes stickAnimOut {
     0% {
         transform: translateY(0);
     }
     100% {
         transform: translateY(-132px);
     }
-} */
+}
 
 
 .menu-wrap {
@@ -435,7 +434,12 @@ footer {
     }
 
     .card-body {
+        margin-top: 0.7rem;
         padding: 0.3rem 1.25rem;
+    }
+    
+    .card{
+        margin-top: 0.7rem;
     }
 
     #expertise{
@@ -458,6 +462,10 @@ footer {
 
     .card-title-overlay {
         font-size: 1.4rem;
+    }
+
+    .mention{
+        font-size: 0.7rem;
     }
 }
 
@@ -723,5 +731,60 @@ h3 {
 .error{
     text-align: center;
     margin-top: 5rem;
+}
+
+/*************/
+/*           */
+/* Equipe    */
+/*           */
+/*************/
+
+.title-team {
+    text-transform: uppercase;
+    margin-bottom : 2rem ;
+}
+
+.aside {
+    width: 70%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.aside > p {
+    text-transform: uppercase;
+}
+
+#card-body-team {
+    width: 50%;
+    margin: auto;
+}
+
+#row-team {
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media (max-width: 576px) {
+    .aside {
+        width: 80%;
+    }
+
+    .card-img-team {
+        width: 70%;
+    }
+
+    .card-team {
+        margin-top: 4rem;
+    }
+
+    #card-body-team {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.card-team {
+    text-align: center;
+    margin-top: 4rem;
 }
 
