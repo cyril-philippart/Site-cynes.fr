@@ -434,7 +434,7 @@ footer {
     }
 
     .card-body {
-        margin-top: 0.7rem;
+        margin-top: 1rem;
         padding: 0.3rem 1.25rem;
     }
     
@@ -461,7 +461,9 @@ footer {
     }
 
     .card-title-overlay {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+	width: 90%;
+	margin: auto;
     }
 
     .mention{
@@ -611,7 +613,7 @@ h3 {
 
     .card-title {
         font-size: 1rem;
-        margin: 1rem 0;
+        margin: 2.5rem auto 1.5rem;
         font-weight: 900;
     }
 
@@ -690,7 +692,7 @@ h3 {
     }
 
     #projet-overlay-image .hover {
-        top: 89%;
+        top: 90%;
     }
 }
 
