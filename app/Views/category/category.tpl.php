@@ -1,6 +1,6 @@
 <a id ="return" onclick="history.go(-1)"></a>
 <div class="projet-title">
-    <h4 class="title">Nos réalisation "<?= $category->getName(); ?>"</h4>
+    <h4 class="title">Nos réalisations "<?= $category->getName(); ?>"</h4>
 </div>
 <div class="row row row-cols-1 row-cols-md-2 row-cols-xl-3">
     <?php foreach ($realisation as $currentRealisation) : ?>

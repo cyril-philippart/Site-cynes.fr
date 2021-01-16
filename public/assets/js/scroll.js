@@ -1,51 +1,21 @@
-(function scroll(w, d) 
-{
-	var el_html = d.documentElement,
+let header = document.querySelector("#header");
+let lastScrollValue = 0;
 
-		el_body = d.getElementsByTagName('body')[0],
-		header = d.getElementById('header'),
-		lastScroll = w.pageYOffset || el_body.scrollTop,
-		menuIsStuck = function (triggerElement, wScrollTop, lastScroll) 
-		{
-                                displayHeader = document.querySelector('.hamburger');
-				regexp = /(nav\-is\-stuck)/i,
-				classFound = el_html.className.match(regexp),
-				navHeight = header.offsetHeight,
-				bodyRect = el_body.getBoundingClientRect(),
-				scrollValue = triggerElement ? triggerElement.getBoundingClientRect().top - bodyRect.top - navHeight : 0;
-
-			if (wScrollTop > scrollValue && !classFound && wScrollTop < lastScroll) 
-			{
-				displayHeader.style.display = '';
-				el_html.className = el_html.className + 'nav-is-stuck';
-				el_body.style.paddingTop = navHeight + 'px';
-			}
-
-			if (classFound && wScrollTop > lastScroll) 
-			{
-				el_html.className = el_html.className.replace(regexp, '');
-				displayHeader.style.display = 'none';
-				el_body.style.paddingTop = '0';
-			}
-
-		},
-		onScrolling = function () 
-		{
-			var wScrollTop = w.pageYOffset || el_body.scrollTop;
-			menuIsStuck(d.querySelector('header'), wScrollTop, lastScroll);
-			lastScroll = wScrollTop;
-		};
-
-	w.addEventListener('scroll', function () 
+document.addEventListener('scroll',() => {
+	let top  = document.documentElement.scrollTop;
+	if (document.querySelector('.toggler').checked == false)
 	{
-		
-		if (document.querySelector('.toggler').checked == false)
-		
-			w.requestAnimationFrame(onScrolling);
-	});
-
-}(window, document));
-
+		if (top	> 300)
+		{
+			if(lastScrollValue < top) {
+				header.classList.add("hidden");
+			} else {
+				header.classList.remove("hidden");
+			}
+		}	
+	}
+    lastScrollValue = top;
+});
 
 function changeColorToggle(checkboxElem) 
 {

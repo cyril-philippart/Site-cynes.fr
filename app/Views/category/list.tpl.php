@@ -1,7 +1,7 @@
 <div class="card-expertise mt-5">
   <div class="row no-gutters mt-0">
     <div class="col-md-6">
-      <img src="<?=$allCategory[0]->getPicture()?>" class="card-img" alt="...">
+      <a href="<?= $router->generate('category-category') . $allCategory[0]->getId(); ?>"><img src="<?=$allCategory[0]->getPicture()?>" class="card-img" alt="..."></a>
     </div>
     <div class="col-md-6">
       <div class="card-body-expertise">
@@ -22,14 +22,14 @@
       </div>
     </div>
     <div id="img-order" class="col-md-6">
-      <img src="<?=$allCategory[1]->getPicture()?>" class="card-img" alt="...">
+      <a href="<?= $router->generate('category-category') . $allCategory[1]->getId(); ?>"><img src="<?=$allCategory[1]->getPicture()?>" class="card-img" alt="..."></a>
     </div>
   </div>
 </div>
 <div class="card-expertise">
   <div class="row no-gutters mt-0">
     <div class="col-md-6">
-      <img src="<?=$allCategory[2]->getPicture()?>" class="card-img" alt="...">
+      <a href="<?= $router->generate('category-category') . $allCategory[2]->getId(); ?>"><img src="<?=$allCategory[2]->getPicture()?>" class="card-img" alt="..."></a>
     </div>
     <div class="col-md-6">
       <div class="card-body-expertise">
@@ -50,7 +50,7 @@
       </div>
     </div>
     <div id="img-order" class="col-md-6">
-      <img src="<?=$allCategory[3]->getPicture()?>" class="card-img" alt="...">
+      <a href="<?= $router->generate('category-category') . $allCategory[3]->getId(); ?>"><img src="<?=$allCategory[3]->getPicture()?>" class="card-img" alt="..."></a>
     </div>
   </div>
 </div>

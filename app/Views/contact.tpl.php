@@ -1,4 +1,4 @@
-<div id="validationSent" class="col-xl-10">
+<div id="validationSent">
       <?php if(!empty($messageValidation)):?>
       <span><?= $messageValidation ?></span>
       <?php endif; ?>
@@ -6,7 +6,7 @@
 <form method="POST" class="row g-3 needs-validation" novalidate>
   <div class="col-xl-6">
     <div class="main-image">
-      <img src="<?=$allElement[6]->getPicture()?>" id="img-contact" class="img-fluid" alt="Responsive image">
+      <img src="/assets/img/contact.png" id="img-contact" class="img-fluid" alt="Responsive image">
     </div>
   </div>
   <div class="col-xl-6">

@@ -7,11 +7,12 @@
     font-family: 'Gotham';
     src: url("/assets/font/GothamMedium.ttf");
     font-display: auto;
-  }
+}
 
 body {
     padding-top: 129px;
 }
+
     
 :root {
     --overlay-color: rgba(0, 0, 0, 0.85);
@@ -19,37 +20,48 @@ body {
 }
     
 header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
     text-align: center;
     background: white;
-    animation: stickAnimOut 2s;
+    transition: top 0.8s;
+    transition-delay: 0s;
+    height: 160px;
+    z-index: 1;
+}
+
+#header.hidden {
+    top: -160px;
 }
     
-.nav-is-stuck header {
+/* .nav-is-stuck header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     animation: stickAnim 0.8s;
     z-index: 1;
-}
+} */
      
-@keyframes stickAnim {
+/* @keyframes stickAnim {
     0% {
         transform: translateY(-132px);
     }
     100% {
         transform: translateY(0);
     }
-} 
+}  */
 
-@keyframes stickAnimOut {
+/* @keyframes stickAnimOut {
     0% {
         transform: translateY(0);
     }
     100% {
         transform: translateY(-132px);
     }
-}
+} */
 
 
 .menu-wrap {
@@ -191,7 +203,7 @@ header {
     
 .logo-cynes {
     margin: 0.6rem ;
-    height: 110px;
+    height: 140px;
 }
 
 p {
@@ -229,6 +241,7 @@ p {
 .card {
     border: none;
     margin: auto;
+    position: initial;
 }
     
 .mb-3 {
@@ -743,12 +756,12 @@ h3 {
 
 .title-team {
     text-transform: uppercase;
-    margin-bottom : 2rem ;
+    margin-bottom : 5rem ;
 }
 
 .aside {
     width: 70%;
-    margin: 2rem auto;
+    margin: 7rem auto;
     text-align: center;
 }
 
@@ -766,9 +779,18 @@ h3 {
     margin: auto;
 }
 
+.card-img-team {
+    width: 50%;
+}
+
+#img-NES {
+    width: 76%;
+}
+
 @media (max-width: 576px) {
     .aside {
         width: 80%;
+        margin : 5rem auto 2.5rem;
     }
 
     .card-img-team {
@@ -783,6 +805,28 @@ h3 {
         width: 100%;
         margin: auto;
     }
+
+    #img-CY {
+        width: 51%;
+        animation: 2s linear 2s imgCyMove;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes imgCyMove {
+        from { transform: translateX(0%); }
+        to   { transform: translateX(42%); }
+    }
+
+    #img-NES {
+        padding-top: 1px;
+        animation: 2s linear 2s imgNesMove;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes imgNesMove {
+        from { transform: translateX(0%); }
+        to   { transform: translateX(-30%); }
+    }
 }
 
 .card-team {
@@ -790,3 +834,25 @@ h3 {
     margin-top: 4rem;
 }
 
+@media (min-width: 768px) {
+    #img-CY{
+        animation: 2s linear 2s imgCyMove;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes imgCyMove {
+        from { transform: translateX(0%); }
+        to   { transform: translateX(32%); }
+    }
+
+    #img-NES {
+        padding-top: 1px;
+        animation: 2s linear 2s imgNesMove;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes imgNesMove {
+        from { transform: translateX(0%); }
+        to   { transform: translateX(-38%); }
+    }
+}
