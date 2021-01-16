@@ -4,13 +4,16 @@
 </div>
 <div id="row-team" class="row row row-cols-2 row-cols-xl-2">
     <div class="card-team">
-        <img src="/assets/img/CY.png" class="card-img-team" id="img-CY">
-        <div id="card-body-team" class="card-body">
-        </div>
+        <a href="#"><img src="/assets/img/CY.png" class="card-img-team" id="img-CY"></a>
     </div>
     <div class="card-team">
-        <img src="/assets/img/NES.png" class="card-img-team" id="img-NES">
-        <div id="card-body-team" class="card-body">
-        </div>
+        <a href="#" ><img src="/assets/img/NES.png" class="card-img-team" id="img-NES"></a>
     </div>
 </div>
+
+<template style="display: none;">
+    <div class="presentation-team">
+        <img src="assets/img/contact.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusantium, et itaque modi nostrum aliquam, doloribus sit earum sequi asperiores voluptatem, libero corporis quibusdam! Sit molestias inventore obcaecati dolor exercitationem.</p>
+    </div>
+</template>

@@ -8,12 +8,7 @@
     src: url("/assets/font/GothamMedium.ttf");
     font-display: auto;
 }
-
-body {
-    padding-top: 129px;
-}
-
-    
+   
 :root {
     --overlay-color: rgba(0, 0, 0, 0.85);
     --menu-speed: 1s;
@@ -28,41 +23,13 @@ header {
     background: white;
     transition: top 0.8s;
     transition-delay: 0s;
-    height: 160px;
+    height: 150px;
     z-index: 1;
 }
 
 #header.hidden {
-    top: -160px;
+    top: -150px;
 }
-    
-/* .nav-is-stuck header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    animation: stickAnim 0.8s;
-    z-index: 1;
-} */
-     
-/* @keyframes stickAnim {
-    0% {
-        transform: translateY(-132px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}  */
-
-/* @keyframes stickAnimOut {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-132px);
-    }
-} */
-
 
 .menu-wrap {
     top: 0;
@@ -72,7 +39,7 @@ header {
     
 .menu-wrap .toggler {
     position: absolute;
-    margin: 2.5rem 1.9rem;
+    margin: 3.7rem 3.5rem;
     top: 0;
     left: 0;
     z-index: 2;
@@ -84,7 +51,7 @@ header {
     
 .menu-wrap .hamburger {
     position: absolute;
-    margin: 1.9rem 1rem;
+    margin : 3.1rem 2.5rem;
     top: 0;
     left: 0;
     width: 70px;
@@ -203,7 +170,7 @@ header {
     
 .logo-cynes {
     margin: 0.6rem ;
-    height: 140px;
+    height: 150px;
 }
 
 p {
@@ -221,7 +188,7 @@ p {
 }
 
 .main-img{
-    height: 745px;
+    height: 870px;
     object-fit: cover;
     margin: 1% 5%;
     width: 90%;
@@ -229,7 +196,7 @@ p {
 
 .card-img-overlay {
     padding: 0;
-    top: 48%;
+    top: 53%;
 }
 
 .card-title-overlay, .card-title {
@@ -392,8 +359,13 @@ footer {
     #marg {
         margin-bottom: 2rem;
     }
-    
+
+    .card-title-overlay {
+        width: 90%;
+        margin: auto;
+    }
 }
+
 @media (min-width: 1025px){
     #background-black-order {
         order:0;
@@ -407,9 +379,13 @@ footer {
 }
     
 @media (max-width: 576px) {
-    body {
-        padding-top: 86px;
+    header {
+        height: 100px;
     } 
+
+    #header.hidden {
+        top: -100px;
+    }
 
     .logo-cynes {
         height: 80px;
@@ -417,6 +393,7 @@ footer {
     }
     .menu-wrap .hamburger {
         margin-top: 0.8rem;
+        margin-left: 1rem;
         width: 60px;
     }
 
@@ -469,14 +446,18 @@ footer {
     }
 
     .main-img{
-        height: 440px;
+        height: 490px;
         object-fit: cover;
     }
 
     .card-title-overlay {
         font-size: 1.1rem;
-	width: 90%;
-	margin: auto;
+        width: 90%;
+        margin: auto;
+    }
+
+    .card-img-overlay {
+        top : 35%
     }
 
     .mention{
@@ -757,6 +738,7 @@ h3 {
 .title-team {
     text-transform: uppercase;
     margin-bottom : 5rem ;
+    margin-top: 15rem;
 }
 
 .aside {
@@ -780,14 +762,19 @@ h3 {
 }
 
 .card-img-team {
-    width: 50%;
+    width: 40%;
 }
 
 #img-NES {
-    width: 76%;
+    width: 60%;
 }
 
 @media (max-width: 576px) {
+    
+    .title-team {
+        margin-top: 10rem;
+    }
+
     .aside {
         width: 80%;
         margin : 5rem auto 2.5rem;
@@ -842,7 +829,7 @@ h3 {
 
     @keyframes imgCyMove {
         from { transform: translateX(0%); }
-        to   { transform: translateX(32%); }
+        to   { transform: translateX(52%); }
     }
 
     #img-NES {
@@ -853,6 +840,6 @@ h3 {
 
     @keyframes imgNesMove {
         from { transform: translateX(0%); }
-        to   { transform: translateX(-38%); }
+        to   { transform: translateX(-60%); }
     }
 }
