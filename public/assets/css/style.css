@@ -8,7 +8,11 @@
     src: url("/assets/font/GothamMedium.ttf");
     font-display: auto;
 }
-   
+
+body {
+    padding-top: 150px;
+}
+
 :root {
     --overlay-color: rgba(0, 0, 0, 0.85);
     --menu-speed: 1s;
@@ -196,7 +200,7 @@ p {
 
 .card-img-overlay {
     padding: 0;
-    top: 53%;
+    top: 61%;
 }
 
 .card-title-overlay, .card-title {
@@ -353,7 +357,7 @@ footer {
         order:-1;
     }
     .row {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     #marg {
@@ -379,6 +383,10 @@ footer {
 }
     
 @media (max-width: 576px) {
+    body {
+        padding-top: 90px;
+    }
+    
     header {
         height: 100px;
     } 
@@ -457,7 +465,7 @@ footer {
     }
 
     .card-img-overlay {
-        top : 35%
+        top : 39%
     }
 
     .mention{
@@ -539,6 +547,10 @@ h3 {
     font-style: italic;
 }
 
+.mention {
+    font-weight: bold;
+}
+ 
 
 /*************/
 /*           */
@@ -738,7 +750,7 @@ h3 {
 .title-team {
     text-transform: uppercase;
     margin-bottom : 5rem ;
-    margin-top: 15rem;
+    margin-top: 8rem;
 }
 
 .aside {
@@ -766,15 +778,10 @@ h3 {
 }
 
 #img-NES {
-    width: 60%;
+    width: 70%;
 }
 
 @media (max-width: 576px) {
-    
-    .title-team {
-        margin-top: 10rem;
-    }
-
     .aside {
         width: 80%;
         margin : 5rem auto 2.5rem;
@@ -805,7 +812,8 @@ h3 {
     }
 
     #img-NES {
-        padding-top: 1px;
+        width: 80%;
+        padding-top: 4px;
         animation: 2s linear 2s imgNesMove;
         animation-fill-mode: forwards;
     }
@@ -821,7 +829,7 @@ h3 {
     margin-top: 4rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     #img-CY{
         animation: 2s linear 2s imgCyMove;
         animation-fill-mode: forwards;
@@ -829,17 +837,303 @@ h3 {
 
     @keyframes imgCyMove {
         from { transform: translateX(0%); }
-        to   { transform: translateX(52%); }
+        to   { transform: translateX(38%); }
     }
 
     #img-NES {
-        padding-top: 1px;
+        padding-top: 4px;
         animation: 2s linear 2s imgNesMove;
         animation-fill-mode: forwards;
     }
 
     @keyframes imgNesMove {
         from { transform: translateX(0%); }
-        to   { transform: translateX(-60%); }
+        to   { transform: translateX(-54%); }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+body:after {
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/close.png) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/loading.gif) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/prev.png) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/next.png);
+    display: none;
+  }
+
+  body.lb-disable-scrolling {
+    overflow: hidden;
+  }
+
+  .lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    display: none;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+    display: none;
+    top: 50px;
+    padding-top: 8%;
+  }
+
+   .lightbox .lb-image-team {
+    display: block;
+    height: auto;
+    max-width: inherit;
+    max-height: none;
+    border-radius: 3px;
+    width: 250px !important;
+    height: 450px!important;
+    border: 4px solid white;
+    object-fit: cover;
+  }
+
+  .lightbox .lb-image {
+    display: block;
+    height: auto;
+    max-width: inherit;
+    max-height: none;
+    border-radius: 3px;
+    width: 450px !important;
+    height: 650px!important;
+    border: 4px solid white;
+    object-fit: cover;
+  }
+
+  .lightbox a img {
+    border: none;
+  }
+
+  .lb-outerContainer {
+    position: relative;
+    *zoom: 1;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .lb-outerContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .lb-loader {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+  }
+
+  .lb-cancel {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/loading.gif) no-repeat;
+  }
+
+  .lb-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .lb-container>.nav {
+    left: 0;
+  }
+
+  .lb-nav a {
+    outline: none;
+    background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+  }
+
+  .lb-prev,
+  .lb-next {
+    height: 100%;
+    cursor: pointer;
+    display: block;
+  }
+
+  .lb-nav a.lb-prev {
+    width: 34%;
+    left: 0;
+    float: left;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/prev.png) left 48% no-repeat;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+  }
+
+  .lb-nav a.lb-prev:hover {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+
+  .lb-nav a.lb-next {
+    width: 64%;
+    right: 0;
+    float: right;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/next.png) right 48% no-repeat;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+  }
+
+  .lb-nav a.lb-next:hover {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+
+  .lb-dataContainer {
+    margin: 0 auto;
+    padding-top: 5%;
+    *zoom: 1;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .lb-dataContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .lb-data {
+    padding: 0 4px;
+    color: white;
+    font-family: "work_sans", sans-serif;
+  }
+
+  .lb-data .lb-details {
+    width: 85%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+    font-family: "work_sans", sans-serif;
+  }
+
+  .lb-caption {
+    display: inline !important;
+  }
+
+  .lb-data .lb-caption {
+    font-family: "work_sans", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1em;
+  }
+
+  .lb-data .lb-caption a {
+    color: #4ae;
+  }
+
+  .lb-data .lb-number {
+    display: block;
+    clear: left;
+    padding-bottom: 1em;
+    font-size: 12px;
+    color: #999999;
+  }
+
+  .lb-data .lb-close {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 49%;
+    width: 30px;
+    height: 30px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/close.png) top right no-repeat;
+    text-align: right;
+    outline: none;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 1;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+
+  .lb-data .lb-close:hover {
+    cursor: pointer;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+
+  @media (max-width: 576px){
+    .lb-data .lb-close {
+        top: -4%;
+        left: 45%;
+    }
+    .lightbox {
+        padding-top: 8% !important;
+    }
+
+    .lightbox .lb-image {
+        width: 270px !important;
+        height: 400px !important;
+    }
+
+    .lb-dataContainer {
+        padding-top: 37%;
+    }
+}
+
+@media (min-width: 768px) {
+    .lb-dataContainer {
+        padding-top: 20%;
+    }
+
+    .lightbox {
+        padding-top: 8%;
+    }
+}
+
+@media (min-width: 1028px) {
+    .lb-dataContainer {
+        padding-top: 10%;
+    }
+
+    .lightbox {
+        padding-top: 3%;
     }
 }
