@@ -386,7 +386,11 @@ footer {
     body {
         padding-top: 90px;
     }
-    
+   
+    .mt-5 {
+	margin-top : 1rem !important;
+    }
+ 
     header {
         height: 100px;
     } 
@@ -465,7 +469,7 @@ footer {
     }
 
     .card-img-overlay {
-        top : 39%
+        top : 49%
     }
 
     .mention{
@@ -784,8 +788,12 @@ h3 {
 @media (max-width: 576px) {
     .aside {
         width: 80%;
-        margin : 5rem auto 2.5rem;
+        margin : 2rem auto 2rem;
     }
+
+    .title-team {
+	margin-top: 4rem;
+}
 
     .card-img-team {
         width: 70%;
@@ -829,7 +837,7 @@ h3 {
     margin-top: 4rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     #img-CY{
         animation: 2s linear 2s imgCyMove;
         animation-fill-mode: forwards;
