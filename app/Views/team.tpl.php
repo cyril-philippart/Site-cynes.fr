@@ -1,6 +1,6 @@
 <div class="aside">
     <h3 class="title-team">l'equipe</h3>
-    <p>Cynes représente la complémentarité entre deux univers : le web et le design. Par leurs expertrises respectives Inès et Cyril ont combinés leur savoir-faire pour vous proposer une offre de communication la plus complète possible</p>
+    <p>Cynes représente la complémentarité entre deux univers: le web et le design. A travers leur expertise respective, Inès et Cyril ont combiné leur savoir-faire pour vous proposer une offre de communication la plus complète possible </p>
 </div>
 <div id="row-team" class="row row row-cols-2 row-cols-xl-2">
     <div class="card-team">

@@ -1,10 +1,10 @@
-<div class="row row row-cols-1">
+<div id="row-legal"  class="row row row-cols-1">
     <h2 style="text-align: center;">MENTIONS LÉGALES</h2>
     <p>Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique, dite L.C.E.N., nous portons à la connaissance des utilisateurs et visiteurs du site : www.cynes.fr les informations suivantes :<br>
         <br>
     <h3>ÉDITEUR</h3><br>
     Le site www.cynes.fr est la propriété exclusive de Auto-entrepreneur Madame Inès Tehami, qui l'édite.<br>
-    Auto-entrepreneur : Madame Inès Philippart<br>
+    Auto-entrepreneur : Madame Inès Tehami<br>
     1 Quater avenue Chiris 06130 GRASSE - Tél : 0669567444<br>
     Immatriculée sous le numéro SIREN : 850933136<br>
     Immatriculée sous le numéro SIRET : 85093313600028<br>
@@ -13,8 +13,8 @@
     Contactez le responsable de la publication : <a href="mailto:contact@cynes.fr">contact@cynes.fr</a><br>
     <br>
     <h3>HÉBERGEMENT</h3><br>
-    Le site est hébergé par Squarespace Ireland Ltd. Le Pole House Ship Street Great 8 Dublin
-    CRÉDITS : les mentions légales ont étés générées par mentions légales<br>
+    Le site est hébergé par AWS Amazon Web Services, Inc.
+    <br>
     <br>
     <h3>CONFIDENTIALITÉ</h3>
     Vos données personnelles sont confidentielles et ne seront en aucun cas communiquées à des tiers hormis pour la bonne exécution de la prestation.<br>

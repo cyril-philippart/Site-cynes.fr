@@ -860,9 +860,15 @@ h3 {
     }
 }
 
+#row-legal {
+    margin: 3rem;
+}
 
-
-
+@media (max-width: 576px) {
+     #row-legal {
+          margin: 2rem 1rem;
+     }
+}
 
 
 

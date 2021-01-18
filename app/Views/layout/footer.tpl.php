@@ -8,7 +8,7 @@
             <a href="mailto:contact@cynes.fr"><i class="far fa-envelope"></i></a>
         </div>
         <div class="information">
-            <span class="mention">© 2021 CYNES. | Tous droits réservés | <a href="<?= $router->generate('legal_mentions'); ?>">Mention légales</a> </span>
+            <span class="mention">© 2021 CYNES. | Tous droits réservés | <a href="<?= $router->generate('legal_mentions'); ?>">Mentions légales</a> </span>
         </div>
     </footer>
     <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>

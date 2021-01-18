@@ -9,7 +9,7 @@
             <div class="col md-6">
                 <div class="card-body">
                     <p class="card-text">CYNES est une agence de communication créative, qui partage les convictions de Monsieur Albert
-                        Camus “Créer c’est vivre deux fois". Nous vous accompagnons dans la création et le
+                        Camus: “Créer c’est vivre deux fois". Nous vous accompagnons dans la création et le
                         développement de votre image et de votre notoriété. Pour nous, concevoir une identité
                         visuelle, c’est traduire une personnalité et un univers, puis le retranscrire graphiquement avec
                         justesse et savoir-faire.</p>
@@ -89,7 +89,7 @@
             <div class="col-md-6">
                 <div class="card-body">
                     <h3><?= $allElement[5]->getName() ?></h3>
-                    <p class="card-text">A la manière d'un couturier, Cynes imagine et conçoit des créations sur-mesures à vos attentes. Notre leitmotiv : « Il y a trois réponses possibles à une pièce de design – oui, non et wow ! "Wow est la réaction que nous recherchons pour vous.
+                    <p class="card-text">A l'image d'un grand couturier, CYNES imagine et conçoit des créations sur mesure qui repondent à vos attentes. Notre leitmotiv: "Trois réponses attendues à une pièce de design –> OUI, NON, WAOUH ! "WAOUH",  la réaction que nous recherchons pour vous.
                     </p>
                     <a href="<?= $router->generate('contact'); ?>"><button type="button" class="btn btn-dark">Contactez-nous</button></a>
                     <span class="phone-number">+33 6 69 56 74 44</span>
