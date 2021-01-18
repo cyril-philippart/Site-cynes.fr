@@ -1,9 +1,9 @@
-    <div class="card text-white">
-        <img src="<?= $allElement[0]->getPicture() ?>" class="main-img img-fluid" alt="...">
-        <div class="card-img-overlay">
-            <h2 class="card-title-overlay">La simplicité est la clé de l'élégance</h2>
-        </div>
+<div class="card-img-overlay">
+    <img src="<?= $allElement[0]->getPicture() ?>" class="main-img img-fluid" alt="...">
+    <div class="container-title-overlay">
+        <h2 class="title-overlay">La simplicité est la clé de l'élégance</h2>
     </div>
+ </div>
     <div class="card mb-3">
         <div id="intro" class="row no-gutters">
             <div class="col md-6">
