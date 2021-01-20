@@ -26,7 +26,7 @@
     <div id="marg" class="row row row-cols-1 row-cols-md-2 row-cols-xl-4">
         <div class="col mb-4">
             <div class=" overlay-image _b0 ">
-                <a href="<?= $router->generate('category-list'); ?>">
+                <a href="<?= $router->generate('category-list'); ?>#identité-visuelle">
                     <img class=" image _b1 " src="<?= $allElement[1]->getPicture() ?>" alt="Alt text" />
                     <div class=" normal _b3 ">
                         <div class=" text _2 "></div>
@@ -39,7 +39,7 @@
         </div>
         <div id="background-black-order" class="col mb-4">
             <div class=" overlay-image _b0 ">
-                <a href="<?= $router->generate('category-list'); ?>">
+                <a href="<?= $router->generate('category-list'); ?>#design">
                     <div class="text">
                         <div class=" text _2 "><?= $allElement[2]->getName() ?></div>
                     </div>
@@ -54,7 +54,7 @@
         </div>
         <div class="col mb-4">
             <div class=" overlay-image _b0 ">
-                <a href="<?= $router->generate('category-list'); ?>">
+                <a href="<?= $router->generate('category-list'); ?>#digital">
                     <img class=" image _b1 " src="<?= $allElement[3]->getPicture() ?>" alt="Alt text" />
                     <div class=" normal _b3 ">
                         <div class=" text _2 "></div>
@@ -67,7 +67,7 @@
         </div>
         <div id="background-black" class="col mb-4">
             <div class=" overlay-image _b0 ">
-                <a href="<?= $router->generate('category-list'); ?>">
+                <a href="<?= $router->generate('category-list'); ?>#web">
                     <div class="text">
                         <div class=" text _2 "><?= $allElement[4]->getName() ?></div>
                     </div>

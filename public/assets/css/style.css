@@ -192,26 +192,27 @@ p {
 }
 
 .main-img{
-    height: 870px;
+    height: 750px;
     object-fit: cover;
-    margin: 1% 5%;
-    width: 90%;
+    width: 100%;
 }
 
 .card-img-overlay {
     position: relative;
     padding: 0;
+    width: 90%;
+    margin: auto;
 }
 
 .container-title-overlay {
     position: absolute;
-    top: 42%;
-    width: 100%;
-    margin: auto;
+    top: 46%;
+    width: 90%;
+    left: 5%;
 }
 
 .title-overlay, .card-title {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
@@ -372,14 +373,6 @@ footer {
     #marg {
         margin-bottom: 2rem;
     }
-
-    .container-title-overlay {
-        margin: auto;
-    }
-
-    .title-overlay {
-        font-size: 1.2rem !important;
-    }
 }
 
 @media (min-width: 1025px){
@@ -471,16 +464,12 @@ footer {
     }
 
     .main-img{
-        height: 490px;
+        height: 440px;
         object-fit: cover;
     }
 
-    .container-title-overlay {
-        margin: auto;
-    }
-
     .title-overlay {
-        font-size: 1.1rem !important;
+        font-size: 0.9rem ;
     }
 
     .card-img-overlay {
@@ -622,6 +611,13 @@ h3 {
     align-items: center;
 }
 
+.title-category {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
 
 @media (max-width: 576px) {
     #img-order {
@@ -636,7 +632,7 @@ h3 {
         padding: 0 1.25rem;
     }
 
-    .card-title {
+    .title-category {
         font-size: 1rem;
         margin: 2.5rem auto 1.5rem;
         font-weight: 900;

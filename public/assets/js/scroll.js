@@ -5,7 +5,7 @@ document.addEventListener('scroll',() => {
 	let top  = document.documentElement.scrollTop;
 	if (document.querySelector('.toggler').checked == false)
 	{
-		if (top	> 300)
+		if (top	> 120)
 		{
 			if(lastScrollValue < top) {
 				header.classList.add("hidden");
