@@ -1,5 +1,5 @@
 <div class="card-img-overlay">
-    <img src="<?= $allElement[0]->getPicture() ?>" class="main-img img-fluid" alt="...">
+    <img src="<?= $allElement[0]->getPicture() ?>" class="main-img img-fluid" alt="image principal CYNES">
     <div class="container-title-overlay">
         <h2 class="title-overlay">La simplicité est la clé de l'élégance</h2>
     </div>
@@ -27,7 +27,7 @@
         <div class="col mb-4">
             <div class=" overlay-image _b0 ">
                 <a href="<?= $router->generate('category-list'); ?>#identité-visuelle">
-                    <img class=" image _b1 " src="<?= $allElement[1]->getPicture() ?>" alt="Alt text" />
+                    <img class=" image _b1 " src="<?= $allElement[1]->getPicture() ?>" alt="image identité visuelle, logo CYNES sur vitrine" />
                     <div class=" normal _b3 ">
                         <div class=" text _2 "></div>
                     </div>
@@ -47,7 +47,7 @@
                         <div class=" text _2 "></div>
                     </div>
                     <div class=" hover _b2 ">
-                        <img class=" image _b1 " src="<?= $allElement[2]->getPicture() ?>" alt="Alt text" />
+                        <img class=" image _b1 " src="<?= $allElement[2]->getPicture() ?>" alt="image design, logo CYNES sur un support de communication" />
                     </div>
                 </a>
             </div>
@@ -55,7 +55,7 @@
         <div class="col mb-4">
             <div class=" overlay-image _b0 ">
                 <a href="<?= $router->generate('category-list'); ?>#digital">
-                    <img class=" image _b1 " src="<?= $allElement[3]->getPicture() ?>" alt="Alt text" />
+                    <img class=" image _b1 " src="<?= $allElement[3]->getPicture() ?>" alt="CYNES est present sur le digital et sur les reseaux sociaux" />
                     <div class=" normal _b3 ">
                         <div class=" text _2 "></div>
                     </div>
@@ -75,7 +75,7 @@
                         <div class=" text _2 "></div>
                     </div>
                     <div class=" hover _b2 ">
-                        <img class=" image _b1 " src="<?= $allElement[4]->getPicture() ?>" alt="Alt text" />
+                        <img class=" image _b1 " src="<?= $allElement[4]->getPicture() ?>" alt="CYNES s'occupe egalement de votre presence sur le web" />
                     </div>
                 </a>
             </div>

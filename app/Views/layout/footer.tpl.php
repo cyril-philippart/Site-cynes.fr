@@ -3,7 +3,7 @@
             <img class="logo" src="/assets/img/CYNES-logo-blanc.png" alt="Logo Cynes">
         </div>
         <div class="icone-contact">
-            <a href="https://www.instagram.com/cynes.creativeagency/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/cynes.creativeagency/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="tel:+33669567444"><i id="phone" class="fas fa-phone-alt"></i></a>
             <a href="mailto:contact@cynes.fr"><i class="far fa-envelope"></i></a>
         </div>

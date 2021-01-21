@@ -36,5 +36,5 @@
                 </div>
             </div>
         </div>
-        <a href="<?= $router->generate('home'); ?>"><img class="logo-cynes" src="/assets/img/CYNES-logo-noir.png" alt="Logo Cynes"></a>
+        <a href="<?= $router->generate('home'); ?>"><img class="logo-cynes" src="/assets/img/CYNES-logo-noir.png" alt="Logo-Cynes"></a>
     </header>

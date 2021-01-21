@@ -6,7 +6,7 @@
 <form method="POST" class="row g-3 needs-validation" novalidate>
   <div class="col-xl-6">
     <div class="main-image">
-      <img src="/assets/img/contact.png" id="img-contact" class="img-fluid" alt="Responsive image">
+      <img src="/assets/img/contact.png" id="img-contact" class="img-fluid" alt="Citation page contact">
     </div>
   </div>
   <div class="col-xl-6">
