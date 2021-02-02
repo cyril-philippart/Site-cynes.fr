@@ -9,11 +9,21 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProjectController extends AbstractController
 {
     /**
-     * @Route("/project", name="project")
+     * @Route("/nos-realisations", name="project_list")
      */
-    public function index(): Response
+    public function list(): Response
     {
-        return $this->render('project/index.html.twig', [
+        return $this->render('project/list.html.twig', [
+            'controller_name' => 'ProjectController',
+        ]);
+    }
+
+    /**
+     * @Route("/nos-realisations/{id}", name="project_show")
+     */
+    public function show(): Response
+    {
+        return $this->render('project/show.html.twig', [
             'controller_name' => 'ProjectController',
         ]);
     }
