@@ -9,12 +9,20 @@ use Symfony\Component\Routing\Annotation\Route;
 class ContactController extends AbstractController
 {
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/contact", name="contact", methods="GET")
      */
-    public function index(): Response
+    public function contact(): Response
     {
-        return $this->render('contact/index.html.twig', [
+        return $this->render('contact/contact.html.twig', [
             'controller_name' => 'ContactController',
         ]);
+    }
+
+    /**
+     * @Route("/contact/add", name="contact_add", methods="POST")
+     */
+    public function add(): Response
+    {
+       
     }
 }
