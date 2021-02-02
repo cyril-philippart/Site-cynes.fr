@@ -9,11 +9,31 @@ use Symfony\Component\Routing\Annotation\Route;
 class MainController extends AbstractController
 {
     /**
-     * @Route("/main", name="main")
+     * @Route("/", name="homepage")
      */
-    public function index(): Response
+    public function homepage(): Response
     {
-        return $this->render('main/index.html.twig', [
+        return $this->render('main/homepage.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/mentions-legales", name="legal_notice")
+     */
+    public function legalNotice(): Response
+    {
+        return $this->render('main/legal_notice.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("/erreur404", name="error404")
+     */
+    public function error404(): Response
+    {
+        return $this->render('main/error404.html.twig', [
             'controller_name' => 'MainController',
         ]);
     }
