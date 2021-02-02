@@ -9,11 +9,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class TeamController extends AbstractController
 {
     /**
-     * @Route("/team", name="team")
+     * @Route("/l-equipe", name="team")
      */
-    public function index(): Response
+    public function team(): Response
     {
-        return $this->render('team/index.html.twig', [
+        return $this->render('team/team.html.twig', [
             'controller_name' => 'TeamController',
         ]);
     }
