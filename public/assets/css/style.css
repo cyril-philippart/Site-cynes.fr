@@ -6,6 +6,7 @@
 
 body {
     padding-top: 150px;
+    zoom: 90%;
 }
 
 :root {
@@ -128,7 +129,7 @@ header {
 .menu-wrap .menu{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     visibility: hidden;
     overflow: hidden;
     display: flex;
