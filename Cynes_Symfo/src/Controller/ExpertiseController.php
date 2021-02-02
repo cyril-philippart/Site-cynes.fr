@@ -9,11 +9,21 @@ use Symfony\Component\Routing\Annotation\Route;
 class ExpertiseController extends AbstractController
 {
     /**
-     * @Route("/expertise", name="expertise")
+     * @Route("/savoir-faire", name="expertise_list")
      */
-    public function index(): Response
+    public function list(): Response
     {
-        return $this->render('expertise/index.html.twig', [
+        return $this->render('expertise/list.html.twig', [
+            'controller_name' => 'ExpertiseController',
+        ]);
+    }
+
+    /**
+     * @Route("/savoir-faire/{id}", name="expertise_show")
+     */
+    public function show(): Response
+    {
+        return $this->render('expertise/show.html.twig', [
             'controller_name' => 'ExpertiseController',
         ]);
     }
