@@ -9,3 +9,6 @@ Nous nous avons pour vocation de vous accompagner, par la communication, dans le
 Pour le moment, nous avons concçu un site internet "vitrine" hébergé par Squarspace. 
 
 Actuellement en formation pour devenir developpeur web, je m'atele à recréer entierement notre site web pour le rendre plus dynamique, plus responsive et surtout à notre gout car entre nous, Squarspace c'est bien mais niveau personnalisation et opimisatino du référencement on est très TRES limité.
+
+# ! UPDATE !
+Voici le lien : https://cynes.fr/
