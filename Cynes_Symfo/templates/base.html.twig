@@ -1,13 +1,79 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+<html lang="fr">
 
-        {% block javascripts %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/663b1e4bdb.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<title>
+			{% block title %}
+				CYNES
+			{% endblock %}
+		</title>
+		{% block stylesheets %}
+			<link rel="stylesheet" href="/assets/css/style.css">
+		{% endblock %}
+	</head>
+	<body>
+
+
+		<header id="header" role="banner">
+			<div class="menu-wrap">
+				<input type="checkbox" onchange="changeColorToggle(this) " class="toggler">
+				<div class="hamburger">
+					<div></div>
+				</div>
+				<div class="menu">
+					<div>
+						<div>
+							<ul>
+								<li><a href="">Accueil</a></li>
+								<li><a href="">Notre Savoir-faire</a></li>
+								<li><a href="">Nos réalisations</a></li>
+								<li><a href="">L' equipe</a></li>
+								<li><a href="">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="<?= $router->generate('home'); ?>"><img class="logo-cynes" src="/assets/img/CYNES-logo-noir.png" alt="Logo-Cynes"></a>
+		</header>
+		{% block body %}{% endblock %}
+		<footer>
+			<div class="logo-cynes-footer">
+				<img class="logo" src="/assets/img/CYNES-logo-blanc.png" alt="Logo Cynes">
+			</div>
+			<div class="icone-contact">
+				<a href="https://www.instagram.com/cynes.creativeagency/" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="tel:+33669567444">
+					<i id="phone" class="fas fa-phone-alt"></i>
+				</a>
+				<a href="mailto:contact@cynes.fr">
+					<i class="far fa-envelope"></i>
+				</a>
+			</div>
+			<div class="information">
+				<span class="mention">© 2021 CYNES. | Tous droits réservés |
+					<a href="">Mentions légales</a>
+				</span>
+			</div>
+		</footer>
+		{% block javascripts %}
+			<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/lightbox-plus-jquery.js"></script>
+			<script src="/assets/js/carousel.js"></script>
+			<script src="/assets/js/scroll.js"></script>
+			<script src="/assets/js/contact.js"></script>
+		{% endblock %}
+	</body>
+
 </html>
