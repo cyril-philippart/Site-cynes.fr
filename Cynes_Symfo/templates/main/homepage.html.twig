@@ -1,20 +1,113 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainController!{% endblock %}
-
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/Site-cynes.fr/Cynes_Symfo/src/Controller/MainController.php'|file_link(0) }}">src/Controller/MainController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/Site-cynes.fr/Cynes_Symfo/templates/main/index.html.twig'|file_link(0) }}">templates/main/index.html.twig</a></code></li>
-    </ul>
-</div>
+<div class="card-img-overlay">
+    <img src="/assets/img/homepage/img-accueil.jpg" class="main-img img-fluid" alt="image principal CYNES">
+    <div class="container-title-overlay">
+        <h2 class="title-overlay">La simplicité est la clé de l'élégance</h2>
+    </div>
+ </div>
+    <div class="card mb-3">
+        <div id="intro" class="row no-gutters">
+            <div class="col md-6">
+                <div class="card-body">
+                    <p class="card-text">CYNES est une agence de communication créative, qui partage les convictions de Monsieur Albert
+                        Camus: “Créer c’est vivre deux fois". Nous vous accompagnons dans la création et le
+                        développement de votre image et de votre notoriété. Pour nous, concevoir une identité
+                        visuelle, c’est traduire une personnalité et un univers, puis le retranscrire graphiquement avec
+                        justesse et savoir-faire.</p>
+                </div>
+            </div>
+            <div class="col md-6">
+                <div class="card-body">
+                    <span class="citation">Le design<br> est l'ambassadeur silencieux de votre marque</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trait"></div>
+    <div id="marg" class="row row row-cols-1 row-cols-md-2 row-cols-xl-4">
+        <div class="col mb-4">
+            <div class=" overlay-image _b0 ">
+                <a href="">
+                    <img class=" image _b1 " src="/assets/img/homepage/identité-visuelle.png" alt="image identité visuelle, logo CYNES sur vitrine" />
+                    <div class=" normal _b3 ">
+                        <div class=" text _2 "></div>
+                    </div>
+                    <div class=" hover _b2 ">
+                        <div class=" text _2 ">Identité viuelle</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="background-black-order" class="col mb-4">
+            <div class=" overlay-image _b0 ">
+                <a href="">
+                    <div class="text">
+                        <div class=" text _2 ">Design</div>
+                    </div>
+                    <div class=" normal _b3 ">
+                        <div class=" text _2 "></div>
+                    </div>
+                    <div class=" hover _b2 ">
+                        <img class=" image _b1 " src="/assets/img/homepage/design.png" alt="image design, logo CYNES sur un support de communication" />
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class=" overlay-image _b0 ">
+                <a href="">
+                    <img class=" image _b1 " src="/assets/img/homepage/digital.png" alt="CYNES est present sur le digital et sur les reseaux sociaux" />
+                    <div class=" normal _b3 ">
+                        <div class=" text _2 "></div>
+                    </div>
+                    <div class=" hover _b2 ">
+                        <div class=" text _2 ">Digital</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="background-black" class="col mb-4">
+            <div class=" overlay-image _b0 ">
+                <a href="">
+                    <div class="text">
+                        <div class=" text _2 ">Web</div>
+                    </div>
+                    <div class=" normal _b3 ">
+                        <div class=" text _2 "></div>
+                    </div>
+                    <div class=" hover _b2 ">
+                        <img class=" image _b1 " src="/assets/img/homepage/web.png" alt="CYNES s'occupe egalement de votre presence sur le web" />
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="expertise" class="card mb-4">
+        <div class="row no-gutters">
+            <div class="col-md-6">
+                <img src="/assets/img/homepage/expertise-sur-mesure.png" id="card-img" alt="...">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h3>Une Expertise sur mesure</h3>
+                    <p class="card-text">A l'image d'un grand couturier, CYNES imagine et conçoit des créations sur mesure qui repondent à vos attentes. Notre leitmotiv: "Trois réponses attendues à une pièce de design –> OUI, NON, WAOUH ! "WAOUH",  la réaction que nous recherchons pour vous.
+                    </p>
+                    <a href=""><button type="button" class="btn btn-dark">Contactez-nous</button></a>
+                    <span class="phone-number">+33 6 69 56 74 44</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carousel">
+        <h5 class="carousel-title">Ils nous font confiance</h5>
+        <div class="carousel-trait"></div>
+        <ul class="carousel-ul">
+            
+                <li class="carousel-list"><img class="logo-customer" src=""></li>
+            
+        </ul>
+    </div>
 {% endblock %}
+
