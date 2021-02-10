@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\ProjectRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -11,10 +12,10 @@ class MainController extends AbstractController
     /**
      * @Route("/", name="homepage")
      */
-    public function homepage(): Response
+    public function homepage(ProjectRepository $projectRepository): Response
     {
         return $this->render('main/homepage.html.twig', [
-            'controller_name' => 'MainController',
+            'all_project' => $projectRepository->findAllProjectLogoDESC(),
         ]);
     }
 
