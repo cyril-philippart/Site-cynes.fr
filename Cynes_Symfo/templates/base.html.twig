@@ -32,17 +32,17 @@
 					<div>
 						<div>
 							<ul>
-								<li><a href="">Accueil</a></li>
-								<li><a href="">Notre Savoir-faire</a></li>
-								<li><a href="">Nos réalisations</a></li>
-								<li><a href="">L' equipe</a></li>
-								<li><a href="">Contact</a></li>
+								<li><a href="{{ path('homepage') }}">Accueil</a></li>
+								<li><a href="{{ path('expertise_list') }}">Notre Savoir-faire</a></li>
+								<li><a href="{{ path('project_list') }}">Nos réalisations</a></li>
+								<li><a href="{{ path('team') }}">L' equipe</a></li>
+								<li><a href="{{ path('contact') }}">Contact</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<a href=""><img class="logo-cynes" src="/assets/img/homepage/CYNES-logo-noir.png" alt="Logo-Cynes"></a>
+			<a href="{{ path('homepage') }}"><img class="logo-cynes" src="/assets/img/homepage/CYNES-logo-noir.png" alt="Logo-Cynes"></a>
 		</header>
 		{% block body %}{% endblock %}
 		<footer>
