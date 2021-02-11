@@ -24,9 +24,7 @@ class MainController extends AbstractController
      */
     public function legalNotice(): Response
     {
-        return $this->render('main/legal_notice.html.twig', [
-            'controller_name' => 'MainController',
-        ]);
+        return $this->render('main/legal_notice.html.twig');
     }
 
     /**
